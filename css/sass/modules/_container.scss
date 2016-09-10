@@ -1,0 +1,6 @@
+.container{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	@extend %pos-relative;
+	padding: 0 10px;
+}

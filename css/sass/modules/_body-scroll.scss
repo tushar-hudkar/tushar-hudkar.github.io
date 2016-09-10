@@ -1,0 +1,55 @@
+#scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-moz-scrollbar-track
+{
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-ms-scrollbar-track
+{
+	-ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+
+#scroll-style::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-moz-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-ms-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+#scroll-style::-moz-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+#scroll-style::-ms-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
