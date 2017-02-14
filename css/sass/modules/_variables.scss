@@ -3,8 +3,11 @@
 Colors
 
 */
-$black :#000000;
-$white: #FFFFFF;
+$white-color: #ffffff;
+$black-color :#000000;
+$grey-color: #e7e7e7;
+$primary-color: #f1b21c;
+$dark-bg-color: #0c101b;
 /*
 
 Mixins
@@ -15,6 +18,7 @@ Mixins
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
+      -o-border-radius: $radius;
           border-radius: $radius;
 }
 
@@ -22,6 +26,7 @@ Mixins
     box-sizing: border-box;
     -o-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 

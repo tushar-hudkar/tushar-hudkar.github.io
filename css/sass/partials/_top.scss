@@ -1,0 +1,103 @@
+.wrapper{
+	max-width: 100%;
+  width: 100%;
+	margin: 132px auto;
+  transform: skewY(5deg);
+}
+
+.skew-area{
+
+}
+
+.top {
+	@extend %leftfull;
+	height: 778px;
+  	background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat;
+  	background-size: cover;
+
+  	.top-content{
+  		@extend %leftfull;
+  		margin-top: 68px;
+  		max-width: 500px;
+
+      p{
+        @extend %left;
+        margin-bottom: 22px;
+        font-size: 72px;
+        color: #fd024e;
+        font-family: 'gilroyextrabold';
+
+        span.greetings{
+          font-size: 36px;
+          color: #323232;
+          font-family: 'lucida_grandebold';
+        }
+      }
+
+      hr{
+        @extend %left;
+        width: 86px;
+        height: 10px;
+        padding: 0;
+        margin: 0px 0px 22px 0px;
+        background-color: #fd024e;
+        border: none;
+      }
+
+      p.intro{
+        @extend %left;
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #323232;
+        font-family: 'lucida_granderegular';
+      }
+
+      p.quote{
+        @extend %left;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #323232;
+        font-family: 'lucida_granderegular';
+      }
+
+  	}
+
+  	
+
+  	
+}
+
+.bg{
+	@extend %left;
+	width: 200px;
+	height: 200px;
+}
+
+.bg1{background-color: #ff8f8f;}
+.bg2{background-color: #8fff9d;}
+.bg3{background-color: #ffd88f;}
+.bg4{background-color: #f8ff8f;}
+.bg5{background-color: #8fc6ff}
+.bg6{background-color: #8fffe5}
+
+
+
+.workflow{
+	@extend %leftfull;
+	margin-top: -200px;
+	height: 400px;
+	@extend %overflow;
+	/* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
+	position: relative;
+
+	transform: skewY(-5deg);
+  background-color: burlywood;
+
+  p.section-heading{
+    @extend %left;
+    font-size: 72px;
+    color: rgba(50, 50, 50, 0.3);
+    font-family: 'gilroyextrabold';
+  }
+}

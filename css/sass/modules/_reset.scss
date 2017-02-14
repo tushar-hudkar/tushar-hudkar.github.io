@@ -76,10 +76,80 @@ video {
     background: transparent;
 }
 
-body {
+body, html {
+    font-size: 0.875rem;
     line-height: 1;
-    background-color: #383838;
+    background-color: #ffffff;
+    font-family: '';
     font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+body h1::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h2::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h3::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h4::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h5::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h6::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body p::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body ul::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body li::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body table tr td::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body div::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body span::selection {
+    color: #fff;
+    background-color: #323232;
 }
 
 article,
@@ -96,80 +166,25 @@ section {
     display: block;
 }
 
-nav ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* change border colour to suit your needs */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 input,
 select {
     vertical-align: middle;
 }
 
-html {
-    font-size: 16px;
-    font-weight: normal;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #ffffff;
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
     html {
-        font-size: 14px!important;
+        font-size: 14px;
     }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 640px) {
     html {
-        font-size: 13px!important;
+        font-size: 12px;
     }
 }
 

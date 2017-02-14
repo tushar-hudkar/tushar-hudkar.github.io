@@ -1,0 +1,83 @@
+header{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 24px 0px;
+  /* @extend %pos-fixed;
+  top: 0px;
+  left: 0px; */
+	/* background-color: #FFFFFF; */
+
+
+	/* h1{
+		@extend %left;
+  		font-size: 64px;
+  		color: #323232;
+  		font-family: 'qanelas_demoblack';
+	} */
+
+  .box{
+    @extend %left;
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    border: 12px solid #000;
+    @extend %pos-relative;
+
+    p{
+      @extend %left;
+      @extend %pos-absolute;
+      top: 8px;
+      right: -78px;
+      font-size: 38px;
+      color: #fd0202;
+      font-family: 'qanelas_demoblack';
+    }
+  }
+
+	.logo{
+  		@extend %left;
+  		width: 68px;
+  		height: 68px;
+  		/* background-color: #ffffff; */
+  		@extend %pos-relative;
+
+  	.hr-line{
+  		@extend %left;
+  		width: 68px;
+    	height: 24px;
+    	@extend %pos-absolute;
+    	top: 0px;
+    	left: 0px;
+  		background-color: rgba(253, 2, 78, 0.8);
+  	}
+  	.vr-line{
+  		@extend %left;
+  		width: 24px;
+  		height: 68px;
+  		@extend %pos-absolute;
+    	top: 0px;
+    	right: 0px;
+  		background-color: rgba(253, 2, 78, 0.8);
+  	}
+
+  	}
+
+	ul{
+		@extend %right;
+		margin-top: 27px;
+		li{
+			@extend %left;
+			list-style: none;
+			margin-left: 54px;
+			font-size: 15px;
+      line-height: 1;
+			text-transform: capitalize;
+			font-family: 'lucida_granderegular';
+			
+			&:first-child{
+				margin-left: 0px;
+			}
+
+		}
+	}
+}

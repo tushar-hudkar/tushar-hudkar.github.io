@@ -27,7 +27,6 @@
                         cwd: 'img/',
                         src: [
                             '*.{png,jpg,gif}'
-                            // '*/*.{png,jpg,gif}'
                         ],
                         dest: 'img/build/'
                     }]
