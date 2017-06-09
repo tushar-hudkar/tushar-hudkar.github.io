@@ -1,0 +1,31 @@
+section.blog{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-top: -200px;
+	@extend %overflow;
+	/* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
+	transform: skewY(-5deg);
+  	background-color: #90de87;
+}
+
+
+.blogBox{
+	@extend %leftfull;
+	margin-bottom: 204px;
+	@extend %pos-relative;
+	@include box-sizing(boxsizing);
+	padding: 22px;
+	height: 320px;
+	background-color: #fff;
+}
+
+
+.empathy{
+	background: url(../../../img/empathy.jpg) no-repeat;
+	background-size: cover;
+}
+
+.cognitive{
+	background: url(../../../img/cognitive.jpg) no-repeat;
+	background-size: cover;
+}

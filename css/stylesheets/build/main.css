@@ -13,37 +13,51 @@ Mixins
 Placeholders
 
 */
-/* line 76, ../sass/modules/_variables.scss */
-header .box, header .box p, header .logo, header .logo .hr-line, header .logo .vr-line, header ul li, .top .top-content p, .top .top-content hr, .top .top-content p.intro, .top .top-content p.quote, .bg, .workflow p.section-heading {
-  float: left; }
+/* line 72, ../sass/modules/_variables.scss */
+header .logo h1 {
+  text-transform: uppercase; }
+
+/* line 74, ../sass/modules/_variables.scss */
+button.viewProject {
+  text-transform: capitalize; }
 
 /* line 78, ../sass/modules/_variables.scss */
-header, .top, .top .top-content, .workflow {
+header .logo, header .logo h1, .projectPhoto, button.viewProject {
+  float: left; }
+
+/* line 80, ../sass/modules/_variables.scss */
+header, section.top, section.top .top-content, section.top .top-content p.greetings, section.top .top-content p.greetings span, section.top .top-content p.intro, section.top .top-content p.quote, .workflow, section.work, p.section-heading, .projectBox, p.projectName, p.projectDescription, section.blog, .blogBox {
   float: left;
   width: 100%; }
 
-/* line 82, ../sass/modules/_variables.scss */
-header ul {
-  float: right; }
-
-/* line 84, ../sass/modules/_variables.scss */
-.workflow {
-  overflow: hidden; }
-
 /* line 86, ../sass/modules/_variables.scss */
-header .box, header .logo {
-  position: relative; }
+.workflow, section.work, section.blog {
+  overflow: hidden; }
 
 /* line 88, ../sass/modules/_variables.scss */
-header .box p, header .logo .hr-line, header .logo .vr-line {
+header .logo, .projectBox, .blogBox {
+  position: relative; }
+
+/* line 90, ../sass/modules/_variables.scss */
+.projectPhoto, button.viewProject {
   position: absolute; }
 
-/* line 92, ../sass/modules/_variables.scss */
-.workflow {
+/* line 94, ../sass/modules/_variables.scss */
+.workflow, section.work, section.blog {
   overflow: hidden; }
 
+/* line 96, ../sass/modules/_variables.scss */
+button.viewProject {
+  transition: all 0.20s ease-in-out; }
+
+/* line 103, ../sass/modules/_variables.scss */
+.projectPhoto, button.viewProject {
+  -ms-box-shadow: -1px 4px 16px 0px #c7c7c7;
+  -o-box-shadow: -1px 4px 16px 0px #c7c7c7;
+  box-shadow: -1px 4px 16px 0px #c7c7c7; }
+
 @font-face {
-  font-family: 'qanelas_demoblack';
+  font-family: 'qanelas_demothin';
   src: url("../../../fonts/node/qanelasdemo-black-webfont.woff2") format("woff2"), url("../../../fonts/node/qanelasdemo-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -2043,15 +2057,12 @@ button {
     float: left; } }
 /* line 1150, ../sass/modules/_foundation.scss */
 .slide-in-down.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2064,15 +2075,12 @@ button {
 
 /* line 1166, ../sass/modules/_foundation.scss */
 .slide-in-left.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2085,15 +2093,12 @@ button {
 
 /* line 1182, ../sass/modules/_foundation.scss */
 .slide-in-up.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2106,15 +2111,12 @@ button {
 
 /* line 1198, ../sass/modules/_foundation.scss */
 .slide-in-right.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2127,15 +2129,12 @@ button {
 
 /* line 1214, ../sass/modules/_foundation.scss */
 .slide-out-down.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2148,15 +2147,12 @@ button {
 
 /* line 1230, ../sass/modules/_foundation.scss */
 .slide-out-right.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2169,15 +2165,12 @@ button {
 
 /* line 1246, ../sass/modules/_foundation.scss */
 .slide-out-up.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2190,15 +2183,12 @@ button {
 
 /* line 1262, ../sass/modules/_foundation.scss */
 .slide-out-left.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -2211,13 +2201,10 @@ button {
 
 /* line 1278, ../sass/modules/_foundation.scss */
 .fade-in.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 0;
-  -webkit-transition-property: opacity;
-          transition-property: opacity; }
+  transition-property: opacity; }
 
 /* line 1284, ../sass/modules/_foundation.scss */
 .fade-in.mui-enter.mui-enter-active {
@@ -2225,13 +2212,10 @@ button {
 
 /* line 1287, ../sass/modules/_foundation.scss */
 .fade-out.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 1;
-  -webkit-transition-property: opacity;
-          transition-property: opacity; }
+  transition-property: opacity; }
 
 /* line 1293, ../sass/modules/_foundation.scss */
 .fade-out.mui-leave.mui-leave-active {
@@ -2239,17 +2223,14 @@ button {
 
 /* line 1296, ../sass/modules/_foundation.scss */
 .hinge-in-from-top.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(-90deg);
   transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
   transform-origin: top;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2261,17 +2242,14 @@ button {
 
 /* line 1313, ../sass/modules/_foundation.scss */
 .hinge-in-from-right.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(-90deg);
   transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2283,17 +2261,14 @@ button {
 
 /* line 1330, ../sass/modules/_foundation.scss */
 .hinge-in-from-bottom.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(90deg);
   transform: perspective(2000px) rotateX(90deg);
   -webkit-transform-origin: bottom;
   -ms-transform-origin: bottom;
   transform-origin: bottom;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2305,17 +2280,14 @@ button {
 
 /* line 1347, ../sass/modules/_foundation.scss */
 .hinge-in-from-left.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(90deg);
   transform: perspective(2000px) rotateY(90deg);
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2327,17 +2299,14 @@ button {
 
 /* line 1364, ../sass/modules/_foundation.scss */
 .hinge-in-from-middle-x.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(-90deg);
   transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2349,17 +2318,14 @@ button {
 
 /* line 1381, ../sass/modules/_foundation.scss */
 .hinge-in-from-middle-y.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(-90deg);
   transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2371,17 +2337,14 @@ button {
 
 /* line 1398, ../sass/modules/_foundation.scss */
 .hinge-out-from-top.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
   transform-origin: top;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2393,17 +2356,14 @@ button {
 
 /* line 1415, ../sass/modules/_foundation.scss */
 .hinge-out-from-right.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2415,17 +2375,14 @@ button {
 
 /* line 1432, ../sass/modules/_foundation.scss */
 .hinge-out-from-bottom.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: bottom;
   -ms-transform-origin: bottom;
   transform-origin: bottom;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2437,17 +2394,14 @@ button {
 
 /* line 1449, ../sass/modules/_foundation.scss */
 .hinge-out-from-left.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2459,17 +2413,14 @@ button {
 
 /* line 1466, ../sass/modules/_foundation.scss */
 .hinge-out-from-middle-x.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2481,17 +2432,14 @@ button {
 
 /* line 1483, ../sass/modules/_foundation.scss */
 .hinge-out-from-middle-y.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2503,15 +2451,12 @@ button {
 
 /* line 1500, ../sass/modules/_foundation.scss */
 .scale-in-up.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2524,15 +2469,12 @@ button {
 
 /* line 1516, ../sass/modules/_foundation.scss */
 .scale-in-down.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2545,15 +2487,12 @@ button {
 
 /* line 1532, ../sass/modules/_foundation.scss */
 .scale-out-up.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2566,15 +2505,12 @@ button {
 
 /* line 1548, ../sass/modules/_foundation.scss */
 .scale-out-down.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2587,15 +2523,12 @@ button {
 
 /* line 1564, ../sass/modules/_foundation.scss */
 .spin-in.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(-0.75turn);
   -ms-transform: rotate(-0.75turn);
   transform: rotate(-0.75turn);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2608,15 +2541,12 @@ button {
 
 /* line 1580, ../sass/modules/_foundation.scss */
 .spin-out.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2629,15 +2559,12 @@ button {
 
 /* line 1596, ../sass/modules/_foundation.scss */
 .spin-in-ccw.mui-enter {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0.75turn);
   -ms-transform: rotate(0.75turn);
   transform: rotate(0.75turn);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 0; }
 
@@ -2650,15 +2577,12 @@ button {
 
 /* line 1612, ../sass/modules/_foundation.scss */
 .spin-out-ccw.mui-leave {
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
-  -webkit-transition-property: -webkit-transform, opacity;
-          transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
   opacity: 1; }
 
@@ -2671,63 +2595,51 @@ button {
 
 /* line 1628, ../sass/modules/_foundation.scss */
 .slow {
-  -webkit-transition-duration: 750ms !important;
-          transition-duration: 750ms !important; }
+  transition-duration: 750ms !important; }
 
 /* line 1631, ../sass/modules/_foundation.scss */
 .fast {
-  -webkit-transition-duration: 250ms !important;
-          transition-duration: 250ms !important; }
+  transition-duration: 250ms !important; }
 
 /* line 1634, ../sass/modules/_foundation.scss */
 .linear {
-  -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important; }
+  transition-timing-function: linear !important; }
 
 /* line 1637, ../sass/modules/_foundation.scss */
 .ease {
-  -webkit-transition-timing-function: ease !important;
-          transition-timing-function: ease !important; }
+  transition-timing-function: ease !important; }
 
 /* line 1640, ../sass/modules/_foundation.scss */
 .ease-in {
-  -webkit-transition-timing-function: ease-in !important;
-          transition-timing-function: ease-in !important; }
+  transition-timing-function: ease-in !important; }
 
 /* line 1643, ../sass/modules/_foundation.scss */
 .ease-out {
-  -webkit-transition-timing-function: ease-out !important;
-          transition-timing-function: ease-out !important; }
+  transition-timing-function: ease-out !important; }
 
 /* line 1646, ../sass/modules/_foundation.scss */
 .ease-in-out {
-  -webkit-transition-timing-function: ease-in-out !important;
-          transition-timing-function: ease-in-out !important; }
+  transition-timing-function: ease-in-out !important; }
 
 /* line 1649, ../sass/modules/_foundation.scss */
 .bounce-in {
-  -webkit-transition-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important;
-          transition-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important; }
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important; }
 
 /* line 1652, ../sass/modules/_foundation.scss */
 .bounce-out {
-  -webkit-transition-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important;
-          transition-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important; }
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important; }
 
 /* line 1655, ../sass/modules/_foundation.scss */
 .bounce-in-out {
-  -webkit-transition-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important;
-          transition-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important; }
+  transition-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important; }
 
 /* line 1658, ../sass/modules/_foundation.scss */
 .short-delay {
-  -webkit-transition-delay: 300ms !important;
-          transition-delay: 300ms !important; }
+  transition-delay: 300ms !important; }
 
 /* line 1661, ../sass/modules/_foundation.scss */
 .long-delay {
-  -webkit-transition-delay: 700ms !important;
-          transition-delay: 700ms !important; }
+  transition-delay: 700ms !important; }
 
 /* line 1664, ../sass/modules/_foundation.scss */
 .shake {
@@ -2885,145 +2797,99 @@ header {
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   padding: 24px 0px;
-  /* @extend %pos-fixed;
-  top: 0px;
-  left: 0px; */
-  /* background-color: #FFFFFF; */
-  	/* h1{
-  		@extend %left;
-    		font-size: 64px;
-    		color: #323232;
-    		font-family: 'qanelas_demoblack';
+  	/* ul{
+  		@extend %right;
+  		margin-top: 27px;
+  		li{
+  			@extend %left;
+  			list-style: none;
+  			margin-left: 54px;
+  			font-size: 15px;
+        line-height: 1;
+  			text-transform: capitalize;
+  			font-family: 'lucida_granderegular';
+  			
+  			&:first-child{
+  				margin-left: 0px;
+  			}
+  
+  		}
   	} */ }
-  /* line 18, ../sass/modules/_header.scss */
-  header .box {
-    width: 100px;
-    height: 70px;
-    background-color: transparent;
-    border: 12px solid #000; }
-    /* line 26, ../sass/modules/_header.scss */
-    header .box p {
-      top: 8px;
-      right: -78px;
-      font-size: 38px;
-      color: #fd0202;
-      font-family: 'qanelas_demoblack'; }
-  /* line 37, ../sass/modules/_header.scss */
-  header .logo {
-    width: 68px;
-    height: 68px;
-    /* background-color: #ffffff; */ }
-    /* line 44, ../sass/modules/_header.scss */
-    header .logo .hr-line {
-      width: 68px;
-      height: 24px;
-      top: 0px;
-      left: 0px;
-      background-color: rgba(253, 2, 78, 0.8); }
-    /* line 53, ../sass/modules/_header.scss */
-    header .logo .vr-line {
-      width: 24px;
-      height: 68px;
-      top: 0px;
-      right: 0px;
-      background-color: rgba(253, 2, 78, 0.8); }
-  /* line 65, ../sass/modules/_header.scss */
-  header ul {
-    margin-top: 27px; }
-    /* line 68, ../sass/modules/_header.scss */
-    header ul li {
-      list-style: none;
-      margin-left: 54px;
-      font-size: 15px;
-      line-height: 1;
-      text-transform: capitalize;
-      font-family: 'lucida_granderegular'; }
-      /* line 77, ../sass/modules/_header.scss */
-      header ul li:first-child {
-        margin-left: 0px; }
+  /* line 10, ../sass/modules/_header.scss */
+  header .logo h1 {
+    margin-bottom: 22px;
+    font-size: 4.25rem;
+    color: #fd024e;
+    letter-spacing: 12px;
+    font-family: 'lucida_grandebold'; }
 
 /* line 1, ../sass/partials/_top.scss */
-.wrapper {
-  max-width: 100%;
-  width: 100%;
-  margin: 132px auto;
-  -webkit-transform: skewY(5deg);
-      -ms-transform: skewY(5deg);
-          transform: skewY(5deg); }
-
-/* line 12, ../sass/partials/_top.scss */
-.top {
+section.top {
   height: 778px;
-  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat fixed;
   background-size: cover; }
-  /* line 18, ../sass/partials/_top.scss */
-  .top .top-content {
+  /* line 7, ../sass/partials/_top.scss */
+  section.top .top-content {
     margin-top: 68px;
-    max-width: 500px; }
-    /* line 23, ../sass/partials/_top.scss */
-    .top .top-content p {
-      margin-bottom: 22px;
-      font-size: 72px;
-      color: #fd024e;
-      font-family: 'gilroyextrabold'; }
-      /* line 30, ../sass/partials/_top.scss */
-      .top .top-content p span.greetings {
-        font-size: 36px;
-        color: #323232;
-        font-family: 'lucida_grandebold'; }
-    /* line 37, ../sass/partials/_top.scss */
-    .top .top-content hr {
+    /* hr{
+      @extend %left;
       width: 86px;
       height: 10px;
       padding: 0;
       margin: 0px 0px 22px 0px;
       background-color: #fd024e;
-      border: none; }
-    /* line 47, ../sass/partials/_top.scss */
-    .top .top-content p.intro {
+      border: none;
+    } */ }
+    /* line 11, ../sass/partials/_top.scss */
+    section.top .top-content p.greetings {
+      margin-bottom: 22px;
+      font-size: 3.625rem;
+      color: #3A3A3A;
+      font-family: 'lucida_grandebold'; }
+      /* line 18, ../sass/partials/_top.scss */
+      section.top .top-content p.greetings span {
+        font-family: 'gilroylight';
+        margin-bottom: 4px;
+        font-size: 2.25rem; }
+    /* line 36, ../sass/partials/_top.scss */
+    section.top .top-content p.intro {
       margin-bottom: 16px;
-      font-size: 22px;
+      font-size: 1.375rem;
       line-height: 1.5;
-      color: #323232;
-      font-family: 'lucida_granderegular'; }
-    /* line 56, ../sass/partials/_top.scss */
-    .top .top-content p.quote {
-      font-size: 22px;
+      color: #3A3A3A;
+      font-family: 'gilroylight'; }
+    /* line 45, ../sass/partials/_top.scss */
+    section.top .top-content p.quote {
+      font-size: 1.375rem;
       line-height: 1.5;
-      color: #323232;
-      font-family: 'lucida_granderegular'; }
+      color: #3A3A3A;
+      font-family: 'gilroylight'; }
 
-/* line 71, ../sass/partials/_top.scss */
-.bg {
-  width: 200px;
-  height: 200px; }
-
-/* line 77, ../sass/partials/_top.scss */
+/* line 58, ../sass/partials/_top.scss */
 .bg1 {
   background-color: #ff8f8f; }
 
-/* line 78, ../sass/partials/_top.scss */
+/* line 59, ../sass/partials/_top.scss */
 .bg2 {
   background-color: #8fff9d; }
 
-/* line 79, ../sass/partials/_top.scss */
+/* line 60, ../sass/partials/_top.scss */
 .bg3 {
   background-color: #ffd88f; }
 
-/* line 80, ../sass/partials/_top.scss */
+/* line 61, ../sass/partials/_top.scss */
 .bg4 {
   background-color: #f8ff8f; }
 
-/* line 81, ../sass/partials/_top.scss */
+/* line 62, ../sass/partials/_top.scss */
 .bg5 {
   background-color: #8fc6ff; }
 
-/* line 82, ../sass/partials/_top.scss */
+/* line 63, ../sass/partials/_top.scss */
 .bg6 {
   background-color: #8fffe5; }
 
-/* line 86, ../sass/partials/_top.scss */
+/* line 67, ../sass/partials/_top.scss */
 .workflow {
   margin-top: -200px;
   height: 400px;
@@ -3033,8 +2899,125 @@ header {
       -ms-transform: skewY(-5deg);
           transform: skewY(-5deg);
   background-color: burlywood; }
-  /* line 97, ../sass/partials/_top.scss */
-  .workflow p.section-heading {
-    font-size: 72px;
-    color: rgba(50, 50, 50, 0.3);
-    font-family: 'gilroyextrabold'; }
+
+/* line 1, ../sass/partials/_work.scss */
+section.work {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: -200px;
+  padding-bottom: 58px;
+  /* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
+  -webkit-transform: skewY(-5deg);
+      -ms-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  background-color: #ded787; }
+
+/* line 1, ../sass/partials/_common.scss */
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 132px auto;
+  -webkit-transform: skewY(5deg);
+      -ms-transform: skewY(5deg);
+          transform: skewY(5deg); }
+
+/* line 8, ../sass/partials/_common.scss */
+p.section-heading {
+  margin-bottom: 72px;
+  font-size: 72px;
+  color: rgba(50, 50, 50, 0.3);
+  font-family: 'gilroyextrabold'; }
+
+/* line 16, ../sass/partials/_common.scss */
+.projectBox {
+  margin-bottom: 204px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 22px;
+  height: 320px;
+  background-color: #fff; }
+
+/* line 26, ../sass/partials/_common.scss */
+.projectPhoto {
+  width: 200px;
+  bottom: -50px;
+  right: -50px;
+  height: 200px;
+  background-color: #fff; }
+
+/* line 37, ../sass/partials/_common.scss */
+p.projectName {
+  margin-bottom: 10px;
+  font-family: 'lucida_grandebold';
+  font-size: 26px;
+  line-height: 1.5;
+  /* color: #3A3A3A; */
+  color: rgba(58, 58, 58, 0.7); }
+
+/* line 47, ../sass/partials/_common.scss */
+p.projectDescription {
+  font-family: 'gilroylight';
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3A3A3A; }
+
+/* line 55, ../sass/partials/_common.scss */
+button.viewProject {
+  border: none;
+  outline: none;
+  bottom: 22px;
+  left: 22px;
+  font-family: 'gilroylight';
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3A3A3A;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border-radius: 0px;
+  padding: 10px 28px; }
+  /* line 74, ../sass/partials/_common.scss */
+  button.viewProject:hover {
+    background-color: #fd024e;
+    color: #fff; }
+
+/* line 1, ../sass/partials/_blog.scss */
+section.blog {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: -200px;
+  /* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
+  -webkit-transform: skewY(-5deg);
+      -ms-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  background-color: #90de87; }
+
+/* line 12, ../sass/partials/_blog.scss */
+.blogBox {
+  margin-bottom: 204px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 22px;
+  height: 320px;
+  background-color: #fff; }
+
+/* line 23, ../sass/partials/_blog.scss */
+.empathy {
+  background: url(../../../img/empathy.jpg) no-repeat;
+  background-size: cover; }
+
+/* line 28, ../sass/partials/_blog.scss */
+.cognitive {
+  background: url(../../../img/cognitive.jpg) no-repeat;
+  background-size: cover; }

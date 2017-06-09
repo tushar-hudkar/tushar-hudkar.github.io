@@ -1,40 +1,29 @@
-.wrapper{
-	max-width: 100%;
-  width: 100%;
-	margin: 132px auto;
-  transform: skewY(5deg);
-}
-
-.skew-area{
-
-}
-
-.top {
+section.top {
 	@extend %leftfull;
 	height: 778px;
-  	background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat;
-  	background-size: cover;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat fixed;
+  background-size: cover;
 
   	.top-content{
   		@extend %leftfull;
   		margin-top: 68px;
-  		max-width: 500px;
 
-      p{
-        @extend %left;
+      p.greetings{
+        @extend %leftfull;
         margin-bottom: 22px;
-        font-size: 72px;
-        color: #fd024e;
-        font-family: 'gilroyextrabold';
+        font-size: 3.625rem;
+        color: #3A3A3A;
+        font-family: 'lucida_grandebold';
 
-        span.greetings{
-          font-size: 36px;
-          color: #323232;
-          font-family: 'lucida_grandebold';
+        span{
+          @extend %leftfull;
+          font-family: 'gilroylight';
+          margin-bottom: 4px;
+          font-size: 2.25rem;
         }
       }
 
-      hr{
+      /* hr{
         @extend %left;
         width: 86px;
         height: 10px;
@@ -42,37 +31,29 @@
         margin: 0px 0px 22px 0px;
         background-color: #fd024e;
         border: none;
-      }
+      } */
 
       p.intro{
-        @extend %left;
+        @extend %leftfull;
         margin-bottom: 16px;
-        font-size: 22px;
+        font-size: 1.375rem;
         line-height: 1.5;
-        color: #323232;
-        font-family: 'lucida_granderegular';
+        color: #3A3A3A;
+        font-family: 'gilroylight';
       }
 
       p.quote{
-        @extend %left;
-        font-size: 22px;
+        @extend %leftfull;
+        font-size: 1.375rem;
         line-height: 1.5;
-        color: #323232;
-        font-family: 'lucida_granderegular';
+        color: #3A3A3A;
+        font-family: 'gilroylight';
       }
 
   	}
 
-  	
-
-  	
 }
 
-.bg{
-	@extend %left;
-	width: 200px;
-	height: 200px;
-}
 
 .bg1{background-color: #ff8f8f;}
 .bg2{background-color: #8fff9d;}
@@ -94,10 +75,4 @@
 	transform: skewY(-5deg);
   background-color: burlywood;
 
-  p.section-heading{
-    @extend %left;
-    font-size: 72px;
-    color: rgba(50, 50, 50, 0.3);
-    font-family: 'gilroyextrabold';
-  }
 }
