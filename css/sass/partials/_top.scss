@@ -23,16 +23,6 @@ section.top {
         }
       }
 
-      /* hr{
-        @extend %left;
-        width: 86px;
-        height: 10px;
-        padding: 0;
-        margin: 0px 0px 22px 0px;
-        background-color: #fd024e;
-        border: none;
-      } */
-
       p.intro{
         @extend %leftfull;
         margin-bottom: 16px;
@@ -55,6 +45,35 @@ section.top {
 }
 
 
+@media screen and (max-width: 640px){
+  section.top{
+    height: 678px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat right fixed;
+
+    .top-content{
+
+      p.greetings{
+          font-size: 32px;
+        span{
+          font-size: 22px;
+        }
+      }
+
+      p.intro{
+        font-size: 16px;
+      }
+
+      p.quote{
+      }
+
+    }
+
+  }
+}
+
+
+
+
 .bg1{background-color: #ff8f8f;}
 .bg2{background-color: #8fff9d;}
 .bg3{background-color: #ffd88f;}
@@ -67,7 +86,7 @@ section.top {
 .workflow{
 	@extend %leftfull;
 	margin-top: -200px;
-	height: 400px;
+	height: 600px;
 	@extend %overflow;
 	/* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
 	position: relative;

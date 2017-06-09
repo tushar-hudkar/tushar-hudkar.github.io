@@ -9,7 +9,7 @@ p.section-heading{
 	@extend %leftfull;
 	margin-bottom: 72px;
 	font-size: 72px;
-	color: rgba(50, 50, 50, 0.3);
+	color: rgba(58, 58, 58, 0.6);
 	font-family: 'gilroyextrabold';
 }
 
@@ -44,6 +44,10 @@ p.projectName{
     color: rgba(58, 58, 58, 0.7);
 }
 
+p.projectName_blog{
+	color: #3A3A3A;
+}
+
 p.projectDescription{
 	@extend %leftfull;
 	font-family: 'gilroylight';
@@ -76,4 +80,30 @@ button.viewProject{
     	color: #fff;
     }
 
+}
+
+
+@media screen and (max-width: 640px){
+	.projectBox{
+		height: inherit;
+		margin-bottom: 48px;
+    	padding-bottom: 138px;
+	}
+
+	.projectPhoto{
+		position: inherit;
+		left: 0px;
+    	top: 28px;
+	}
+}
+
+.chapterapp{
+	background: url(../../../img/sprint.jpg) no-repeat;
+	background-size: cover;
+}
+
+.discussion{
+	background: url(../../../img/sprint.jpg) no-repeat;
+	background-size: cover;
+	background-position-x: -399px;
 }

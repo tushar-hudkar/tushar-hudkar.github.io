@@ -1797,3 +1797,10 @@ button {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+
+
+@media screen and (max-width: 640px){
+  .small-pull-4 {
+  left: 0%; }
+}

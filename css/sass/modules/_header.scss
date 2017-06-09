@@ -37,3 +37,13 @@ header{
 		}
 	} */
 }
+
+@media screen and (max-width: 640px){
+	header{
+	.logo{
+      h1{
+        font-size: 34px;
+      }
+  	}
+}
+}

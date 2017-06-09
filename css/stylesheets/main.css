@@ -26,7 +26,7 @@ header .logo, header .logo h1, .projectPhoto, button.viewProject {
   float: left; }
 
 /* line 80, ../sass/modules/_variables.scss */
-header, section.top, section.top .top-content, section.top .top-content p.greetings, section.top .top-content p.greetings span, section.top .top-content p.intro, section.top .top-content p.quote, .workflow, section.work, p.section-heading, .projectBox, p.projectName, p.projectDescription, section.blog, .blogBox {
+header, footer, section.top, section.top .top-content, section.top .top-content p.greetings, section.top .top-content p.greetings span, section.top .top-content p.intro, section.top .top-content p.quote, .workflow, section.work, p.section-heading, .projectBox, p.projectName, p.projectDescription, section.blog, .blogBox {
   float: left;
   width: 100%; }
 
@@ -2759,6 +2759,10 @@ button {
   -webkit-animation-delay: 700ms !important;
   animation-delay: 700ms !important; }
 
+@media screen and (max-width: 640px) {
+  /* line 1804, ../sass/modules/_foundation.scss */
+  .small-pull-4 {
+    left: 0%; } }
 /* line 1, ../sass/modules/_header.scss */
 header {
   box-sizing: border-box;
@@ -2793,6 +2797,21 @@ header {
     letter-spacing: 12px;
     font-family: 'lucida_grandebold'; }
 
+@media screen and (max-width: 640px) {
+  /* line 44, ../sass/modules/_header.scss */
+  header .logo h1 {
+    font-size: 34px; } }
+/* line 1, ../sass/modules/_footer.scss */
+footer {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 398px;
+  background-color: #3A3A3A;
+  margin-top: -100px; }
+
 /* line 1, ../sass/partials/_top.scss */
 section.top {
   height: 778px;
@@ -2800,16 +2819,7 @@ section.top {
   background-size: cover; }
   /* line 7, ../sass/partials/_top.scss */
   section.top .top-content {
-    margin-top: 68px;
-    /* hr{
-      @extend %left;
-      width: 86px;
-      height: 10px;
-      padding: 0;
-      margin: 0px 0px 22px 0px;
-      background-color: #fd024e;
-      border: none;
-    } */ }
+    margin-top: 68px; }
     /* line 11, ../sass/partials/_top.scss */
     section.top .top-content p.greetings {
       margin-bottom: 22px;
@@ -2821,48 +2831,62 @@ section.top {
         font-family: 'gilroylight';
         margin-bottom: 4px;
         font-size: 2.25rem; }
-    /* line 36, ../sass/partials/_top.scss */
+    /* line 26, ../sass/partials/_top.scss */
     section.top .top-content p.intro {
       margin-bottom: 16px;
       font-size: 1.375rem;
       line-height: 1.5;
       color: #3A3A3A;
       font-family: 'gilroylight'; }
-    /* line 45, ../sass/partials/_top.scss */
+    /* line 35, ../sass/partials/_top.scss */
     section.top .top-content p.quote {
       font-size: 1.375rem;
       line-height: 1.5;
       color: #3A3A3A;
       font-family: 'gilroylight'; }
 
-/* line 58, ../sass/partials/_top.scss */
+@media screen and (max-width: 640px) {
+  /* line 49, ../sass/partials/_top.scss */
+  section.top {
+    height: 678px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%), url(../../../img/tushar.jpg) no-repeat right fixed; }
+    /* line 55, ../sass/partials/_top.scss */
+    section.top .top-content p.greetings {
+      font-size: 32px; }
+      /* line 57, ../sass/partials/_top.scss */
+      section.top .top-content p.greetings span {
+        font-size: 22px; }
+    /* line 62, ../sass/partials/_top.scss */
+    section.top .top-content p.intro {
+      font-size: 16px; } }
+/* line 77, ../sass/partials/_top.scss */
 .bg1 {
   background-color: #ff8f8f; }
 
-/* line 59, ../sass/partials/_top.scss */
+/* line 78, ../sass/partials/_top.scss */
 .bg2 {
   background-color: #8fff9d; }
 
-/* line 60, ../sass/partials/_top.scss */
+/* line 79, ../sass/partials/_top.scss */
 .bg3 {
   background-color: #ffd88f; }
 
-/* line 61, ../sass/partials/_top.scss */
+/* line 80, ../sass/partials/_top.scss */
 .bg4 {
   background-color: #f8ff8f; }
 
-/* line 62, ../sass/partials/_top.scss */
+/* line 81, ../sass/partials/_top.scss */
 .bg5 {
   background-color: #8fc6ff; }
 
-/* line 63, ../sass/partials/_top.scss */
+/* line 82, ../sass/partials/_top.scss */
 .bg6 {
   background-color: #8fffe5; }
 
-/* line 67, ../sass/partials/_top.scss */
+/* line 86, ../sass/partials/_top.scss */
 .workflow {
   margin-top: -200px;
-  height: 400px;
+  height: 600px;
   /* background: linear-gradient(-5deg, #ffffff 50%, rgba(143, 198, 255, 0) 50%); */
   position: relative;
   transform: skewY(-5deg);
@@ -2881,6 +2905,10 @@ section.work {
   transform: skewY(-5deg);
   background-color: #ded787; }
 
+@media screen and (max-width: 640px) {
+  /* line 15, ../sass/partials/_work.scss */
+  section.work {
+    padding-bottom: 136px; } }
 /* line 1, ../sass/partials/_common.scss */
 .wrapper {
   max-width: 100%;
@@ -2892,7 +2920,7 @@ section.work {
 p.section-heading {
   margin-bottom: 72px;
   font-size: 72px;
-  color: rgba(50, 50, 50, 0.3);
+  color: rgba(58, 58, 58, 0.6);
   font-family: 'gilroyextrabold'; }
 
 /* line 16, ../sass/partials/_common.scss */
@@ -2925,13 +2953,17 @@ p.projectName {
   color: rgba(58, 58, 58, 0.7); }
 
 /* line 47, ../sass/partials/_common.scss */
+p.projectName_blog {
+  color: #3A3A3A; }
+
+/* line 51, ../sass/partials/_common.scss */
 p.projectDescription {
   font-family: 'gilroylight';
   font-size: 18px;
   line-height: 1.5;
   color: #3A3A3A; }
 
-/* line 55, ../sass/partials/_common.scss */
+/* line 59, ../sass/partials/_common.scss */
 button.viewProject {
   border: none;
   outline: none;
@@ -2949,10 +2981,33 @@ button.viewProject {
   -o-border-radius: 0px;
   border-radius: 0px;
   padding: 10px 28px; }
-  /* line 74, ../sass/partials/_common.scss */
+  /* line 78, ../sass/partials/_common.scss */
   button.viewProject:hover {
     background-color: #fd024e;
     color: #fff; }
+
+@media screen and (max-width: 640px) {
+  /* line 87, ../sass/partials/_common.scss */
+  .projectBox {
+    height: inherit;
+    margin-bottom: 48px;
+    padding-bottom: 138px; }
+
+  /* line 93, ../sass/partials/_common.scss */
+  .projectPhoto {
+    position: inherit;
+    left: 0px;
+    top: 28px; } }
+/* line 100, ../sass/partials/_common.scss */
+.chapterapp {
+  background: url(../../../img/sprint.jpg) no-repeat;
+  background-size: cover; }
+
+/* line 105, ../sass/partials/_common.scss */
+.discussion {
+  background: url(../../../img/sprint.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: -399px; }
 
 /* line 1, ../sass/partials/_blog.scss */
 section.blog {
@@ -2987,5 +3042,14 @@ section.blog {
 .cognitive {
   background: url(../../../img/cognitive.jpg) no-repeat;
   background-size: cover; }
+
+@media screen and (max-width: 640px) {
+  /* line 34, ../sass/partials/_blog.scss */
+  section.blog {
+    padding-bottom: 102px; }
+
+  /* line 37, ../sass/partials/_blog.scss */
+  .blogBox {
+    margin-bottom: 48px; } }
 
 /*# sourceMappingURL=main.css.map */

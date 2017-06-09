@@ -29,3 +29,13 @@ section.blog{
 	background: url(../../../img/cognitive.jpg) no-repeat;
 	background-size: cover;
 }
+
+@media screen and (max-width: 640px){
+	section.blog{
+		padding-bottom: 102px;
+	}
+	.blogBox{
+		margin-bottom: 48px;
+	}
+
+}

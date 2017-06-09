@@ -9,3 +9,10 @@ section.work{
   	background-color: #ded787;
 }
 
+
+
+@media screen and (max-width: 640px){
+	section.work{
+		padding-bottom: 136px;
+	}
+}
