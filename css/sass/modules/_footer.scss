@@ -1,7 +1,90 @@
-footer{
+.footer-port{
 	@extend %leftfull;
 	@include box-sizing(boxsizing);
 	height: 398px;
 	background-color: #3A3A3A;
     margin-top: -100px;
+}
+
+footer{
+	@extend %leftfull;
+	margin-top: 78px;
+	@extend %pos-relative;
+    @include box-sizing(boxsizing);
+    background-color: #fff;
+}
+
+.foot-margin{
+	margin-top: 108px;
+}
+
+.foot-bg{
+	@extend %leftfull;
+	padding: 18px 0px; 
+	border-top: 1px solid #dadada;
+	background-color: #fff;
+}
+
+
+ul.footer-nav{
+        @extend %left;
+        li{
+        @extend %left;
+        list-style: none;
+        margin-top: 10px;
+        margin-right: 18px;
+        font-size: 0.8125rem;
+        line-height: 1rem;
+        color: #333;            
+        letter-spacing: 1px;     
+        
+        &:first-child{
+        }
+
+        a{
+        text-decoration: none;
+
+        &:hover{
+        text-decoration: none;  
+        color: #446a96;
+        }
+        }   
+        }
+
+}
+
+.footer-social{
+	@extend %right;
+	z-index: 999;
+
+	.icon-container{
+		@extend %left;
+    	margin-right: 18px;
+        margin-top: 5px;
+		@extend %pointer;
+		width: 26px;
+		height: 26px;
+		background-color: #ddd;
+		@include border-radius(50%);
+		@extend %ease;
+
+    	.icon{
+    		@extend %left;
+    		margin-left: 50%;
+    		margin-top: 50%;
+    		transform: translate(-49%, -42%);    		
+    		font-size: 16px;
+    		color: rgba(51, 51, 51, 0.6);
+    		@extend %ease;
+
+    	}
+
+        &:hover{
+
+            .icon{
+                color: #446a96;
+            }
+        }
+    	
+	}
 }

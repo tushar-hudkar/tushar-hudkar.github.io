@@ -1,6 +1,42 @@
 @import 'variables';
 @import 'fonts';
+@import 'fonts-icon';
+@import 'container';
+@import 'wrapper';
 @import 'reset';
-@import 'foundation';
 @import 'header';
 @import 'footer';
+
+
+
+.projectNav{
+	@extend %leftfull;
+	background-color: #fff;
+	padding: 32px 0;
+
+	ul{
+		@extend %leftfull;
+		li{
+			@extend %left;
+			list-style: none;
+			text-transform: uppercase;
+    		margin-left: 32px;
+    		font-size: 0.875rem;
+    		letter-spacing: 1px;
+    		color: rgba(0, 0, 0, 0.5);
+    		font-family: 'ralewayregular';
+    		line-height: 2rem;
+    		cursor: pointer;
+
+    		&:first-child{
+    			margin-left: 0px;
+    		}
+		}
+
+		.active{
+    			color: #000;
+    			font-family: 'ralewaybold';
+    		}
+	}
+}
+

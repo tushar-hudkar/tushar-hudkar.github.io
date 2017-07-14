@@ -1,4 +1,4 @@
-header{
+header.port-header{
 	@extend %leftfull;
 	@include box-sizing(boxsizing);
 	padding: 24px 0px;
@@ -36,6 +36,34 @@ header{
 
 		}
 	} */
+}
+
+.top-intro{
+	@extend %leftfull;
+	@extend %pos-relative;
+	z-index: 99;
+	margin-top: 158px;
+	@include box-sizing(boxsizing);
+	@extend %center;
+
+	h3{
+		@extend %leftfull;
+		margin-bottom: 26px;
+		@extend %center;
+		font-size: 2rem;
+		color: #fff;
+		font-family: 'gilroylight';
+		letter-spacing: 2px;
+	}
+	h5{
+		@extend %leftfull;
+		@extend %center;
+		font-size: 1.25rem;
+		line-height: 2.375rem;
+		color: #fff;
+		font-family: 'gilroylight';
+		letter-spacing: 2px;
+	}
 }
 
 @media screen and (max-width: 640px){

@@ -1,0 +1,109 @@
+.designAppDrawer{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-top: 68px;
+	    padding-top: 38px;
+
+	.introducingHomeScreen{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+
+		h2.micromax1thingHeading{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			font-size: 3.625rem;
+	line-height: 4.875rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-weight: normal;
+			font-family: 'brandongrotesque-thinbook';
+		}
+		p.point{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewaylight';
+		}
+	}
+
+	.micromax1thingDescription{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);		
+
+		p.micromax1thingText{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewaylight';		
+		}
+
+		.AppDrawerScreen{
+			@extend %leftfull;
+
+			.introScreen{
+				@extend %left;
+				margin-top: 62px;
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+		ul.solution{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			    padding-left: 18px;
+
+			li{
+				@extend %leftfull;
+				@include box-sizing(boxsizing);
+				padding-left: 16px;
+				list-style-type: decimal; 
+				margin-top: 12px;
+				font-size: 0.9375rem;
+				color: #000;
+				line-height: 1.7rem;
+				font-family: 'ralewaylight';	
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 640px){
+	.designAppDrawer{
+
+	.introducingHomeScreen{
+
+		h2.micromax1thingHeading{
+			font-size: 2.5rem;
+    	line-height: 44px;
+		}
+		p.point{
+		}
+	}
+
+	.micromax1thingDescription{	
+
+		p.micromax1thingText{		
+		}
+
+		.AppDrawerScreen{
+			display: none;
+
+			.introScreen{
+				img{
+				}
+			}
+		}
+		ul.solution{
+
+			li{
+			}
+		}
+	}
+
+}
+}
