@@ -1,0 +1,149 @@
+.micromaxContainer{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-top: 30px;
+	
+	@extend %pos-relative;
+	
+	.containerIssue{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		padding-top: 38px;
+		padding-right: 48px;
+		
+
+		ul.containerType{
+			@extend %leftfull;
+			margin-bottom: 36px;
+			li{
+				@extend %leftfull;
+				font-size: 1rem;
+				color: #000;
+				line-height: 1.75rem;
+				font-family: 'ralewaysemibold';
+				list-style: none;
+				text-transform: capitalize;
+			}
+		}
+
+		ul.squareCat{
+			@extend %leftfull;
+			padding-left: 20px;
+			margin-bottom: 22px;
+			li{
+				@extend %leftfull;
+				font-size: 0.9375rem;
+				color: #000;
+				line-height: 1.75rem;
+				font-family: 'ralewayregular';
+				text-transform: capitalize;
+				list-style-type: upper-alpha;
+				margin-top: 32px;
+
+				&:first-child{margin-top: 0;}
+
+				.containerImg{
+					@extend %leftfull;
+					margin-left: -20px;
+					img{
+						@extend %left;
+						margin-right: 38px;
+						max-width: 100%;
+						margin-top: 18px;
+					    width: 64px;
+					}
+				}
+			}
+		}
+
+		.containerImg{
+			@extend %leftfull;
+			img{
+			max-width: 100%;
+			    width: 64px;
+		}
+		}
+
+		
+
+		h3.containerHeading1{
+			@extend %leftfull;
+			margin-top: 22px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.75rem;
+			font-family: 'ralewaysemibold';
+
+		}
+		h3.containerHeading2{
+			@extend %leftfull;
+			margin-top: 64px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.75rem;
+			font-family: 'ralewaysemibold';
+
+		}
+
+		p.micromaxText{
+			@extend %left;
+			@include box-sizing(boxsizing);
+			margin-top: 12px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.75rem;
+			font-family: 'ralewayregular';
+		}
+
+		
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	
+	.micromaxContainer{
+	
+	.containerIssue{
+		padding-right: 14px;
+		
+
+		ul.containerType{
+			margin-bottom: 24px;
+			li{
+			}
+		}
+
+		ul.squareCat{
+			li{
+
+				.containerImg{
+					img{
+						width: 48px;
+					}
+				}
+			}
+		}
+
+		.containerImg{
+			img{
+				width: 48px;
+		}
+		}
+
+		
+
+		h3.containerHeading1{
+		}
+
+		h3.containerHeading2{
+			margin-top: 0px;
+		}
+
+		p.micromaxText{
+		}
+
+		
+	}
+}
+}

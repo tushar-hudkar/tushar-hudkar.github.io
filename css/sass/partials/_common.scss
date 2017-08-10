@@ -1,0 +1,205 @@
+p.section-heading{
+	@extend %leftfull;
+	text-align: center;
+	margin-bottom: 74px;
+	font-size: 2rem;
+	color: #333;
+	letter-spacing: 1px;
+	font-family: 'source_sans_prosemibold';
+	text-transform: uppercase;
+}
+
+
+.project-box{
+	@extend %leftfull;
+	@extend %pos-relative;
+	margin-bottom: 14px;
+	height: 288px;
+	@include box-sizing(boxsizing);
+	text-align: center;
+	background-color: #fff;
+	@extend %ease;	
+	cursor: pointer;
+	display: table;
+
+	.right-arrow_project{
+		@extend %left;
+		@extend %pos-absolute;
+		z-index: 5;
+	    bottom: 16px;
+	    left: 49%;
+	    font-size: 2.25rem;
+	    line-height: 1;
+	    color: #333;
+	    @extend %ease;
+	    display: none;
+	}	
+
+	&:hover{
+		-webkit-box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
+	    -moz-box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
+	    box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
+
+		.right-arrow_project{
+			@extend %ease;
+		    display: block;
+		}
+	}
+
+	.v-align_box{
+		display: table-cell;
+	    vertical-align: middle;
+
+	.logo-card{
+		@extend %leftfull;
+		text-align: center;
+		@extend %ease;
+
+		p.logo-title_chapterapp{
+			@extend %leftfull;
+			margin-bottom: 24px;
+			@include box-sizing(boxsizing);
+			text-align: center;
+			font-size: 2rem;
+			font-family: 'ralewayextrabold';
+			color: rgba(51, 51, 51, 0.7);
+			color: #333;
+			letter-spacing: 2px;
+		}
+
+		ul.sub_title{
+			@extend %leftfull;
+			display: inline-block;
+
+			li{
+				list-style: none;
+				margin-right: 12px;
+				display: inline-block;
+				font-size: 1rem;
+				color: #333;
+				line-height: 1.5;
+				text-transform: capitalize;
+				font-family: 'source_sans_proregular';
+				letter-spacing: 3px;
+
+				&:last-child{
+					margin: 0px;
+				}
+			}
+		}
+
+
+		.f-lg{
+			@extend %leftfull;
+			margin-bottom: 18px;
+			display: inline-block;
+			text-align: center;
+
+
+			img.foodraveller{
+				display: inline-block;
+				margin-top: -20px;
+				max-width: 100%;
+				width: 52px;
+			}
+
+			p.logo-title_foodraveller{
+				display: inline-block;
+				margin-left: 4px;
+			    font-size: 2rem;
+			    letter-spacing: 3px;
+			    font-family: 'gilroylight';
+			    text-transform: uppercase;
+			    color: #f2b21c;
+			}
+		}
+
+		
+
+		img.onething{
+			display: inline-block;
+			margin-bottom: 20px;
+			max-width: 100%;
+			width: 262px;
+		}			
+
+		p.logo-title_onething{
+			display: block;
+		    font-size: 1rem;
+		    line-height: 1.9;
+		    letter-spacing: 3px;
+		   	font-family: 'source_sans_proregular';
+		    text-transform: capitalize;
+		    color: #333;
+
+		}
+	}
+
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	p.section-heading{
+		font-size: 1.5rem;
+		margin-bottom: 44px;
+	}
+
+	.project-box{
+		height: 248px;
+
+	.right-arrow_project{
+	    display: block;
+	}	
+
+	.v-align_box{
+
+	.logo-card{
+		margin-top: -32px;
+
+		p.logo-title_chapterapp{
+			font-size: 1.5rem;
+		}
+
+		ul.sub_title{
+
+			li{
+				font-size: 0.875rem;
+				letter-spacing: 2px;
+
+				&:last-child{
+				}
+			}
+		}
+
+
+		.f-lg{
+
+
+			img.foodraveller{
+				margin-top: -14px;
+			    width: 36px;
+			}
+
+			p.logo-title_foodraveller{
+				font-size: 1.25rem;
+    			letter-spacing: 2px;
+			}
+		}
+
+		
+
+		img.onething{
+			width: 162px;
+		}			
+
+		p.logo-title_onething{
+			font-size: 0.875rem;
+		    letter-spacing: 2px;
+		}
+	}
+
+	}
+
+}
+}

@@ -1,0 +1,97 @@
+.introducingHome{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 42px 0;
+	margin-top: 68px;
+
+	.introducingHomeScreen{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		@extend %center;
+
+		img{
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+
+	.micromax1thingDescription{
+		@extend %right;
+		@include box-sizing(boxsizing);
+		padding-right: 78px;
+
+		h2.micromax1thingHeading{
+			@extend %leftfull;
+			margin-top: 74px;
+			margin-bottom: 62px;
+			@include box-sizing(boxsizing);
+			font-size: 3.625rem;
+	line-height: 4.875rem;
+			letter-spacing: 2px;
+    		word-spacing: 3px;
+			color: rgba(0, 0, 0, 0.5);
+			font-weight: normal;
+			font-family: 'brandongrotesque-thinbook';
+		}
+
+		p.micromax1thingText{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 0.9375rem;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewaylight';		
+		}
+	}
+
+}
+
+.solve{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 78px 0 22px 0;
+.solveText{
+	@extend %leftfull;
+	@extend %center;
+	font-size: 0.9375rem;
+	color: #000;
+	line-height: 1.7rem;
+	font-family: 'ralewaymedium';
+}
+}
+
+
+@media screen and (max-width: 640px){
+	
+	.introducingHome{
+		padding: 0px;
+
+	.introducingHomeScreen{
+			    margin-top: 48px;
+		img{
+		}
+	}
+
+	.micromax1thingDescription{
+		padding-right: 0px;
+
+		h2.micromax1thingHeading{
+			margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    	line-height: 44px;
+		}
+
+		p.micromax1thingText{		
+		}
+	}
+
+}
+
+.solve{
+	 padding-top: 22px;
+.solveText{
+}
+}
+
+}

@@ -1,0 +1,33 @@
+.container{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	@extend %pos-relative;
+	padding: 0 10px;
+}
+
+.white-surface{
+	@extend %leftfull;
+	@extend %pos-relative;
+	padding: 118px 0px;
+	background-color: #FFFFFF;
+}
+
+.white-surface_margin{
+	margin-top: 108px;
+	padding: 24px 0px 118px 0px;
+}
+
+
+@media screen and (max-width: 640px){
+	.white-surface{
+	margin-top: 22px;
+	}	
+
+	.white-surface_m-margin{
+		margin-top: -22px;
+	}
+
+	.card-hide{
+		display: none;
+	}
+}

@@ -1,0 +1,154 @@
+.filter{
+	@extend %leftfull;
+	margin-bottom: 40px;
+	padding: 10px 0px;
+
+	p.eve-plan{
+		@extend %leftfull;
+		text-align: center;
+		margin-bottom: 28px;
+	    font-size: 1.125rem;
+	    line-height: 1.5;
+	    color: #333;
+	}
+
+	ul{
+		@extend %leftfull;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 22px;
+
+		li{
+			float: none;
+			display: inline-block;
+			list-style: none;
+			padding: 10px 16px 8px 16px;
+			background-color: #fff;
+			color: #333;
+			text-transform: capitalize;
+			font-size: 1rem;
+			margin-right: 52px;
+			border: 1px solid rgba(51, 51, 51, 0.4);
+			@extend %ease;
+			@extend %pointer;
+
+			&:last-child{
+				margin-right: 0px;
+			}
+
+			&:first-child{
+				    margin-left: 0px;
+			}
+
+			&:hover{
+				border: 1px solid #446a96;
+				background-color: #446a96;
+				color: #fff;
+			}
+		}
+
+		li.active{
+			border: 1px solid #446a96;
+			background-color: #446a96;
+			color: #fff;
+		}
+	}
+}
+
+p.or-filter{
+	@extend %leftfull;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 0.875rem;
+	color: #333;
+}
+
+
+select.eve-select-city{
+	float: none;
+	width: 216px;
+	margin-right: 52px;
+	padding: 8px 16px 4px 16px;
+	outline: none;
+	border-radius: 0px;
+}
+
+
+input.eve-select-date{
+	float: none;
+	margin-right: 52px;
+	max-width: 258px;
+	width: 100%;
+	padding: 8px 16px 4px 16px;
+	outline: none;
+}
+
+
+button.eve-srch_btn{
+	float: none;
+	outline: none;
+	border-radius: 0px;
+	border: 1px solid #a7a7a7;
+	padding: 9px 22px;
+	font-size: 1rem;
+	color: #333;
+	background-color: transparent;
+	@extend %ease;
+
+	&:hover{
+		color: #fff;
+		border: 1px solid #446a96;
+    	background-color: #446a96;
+	}
+}
+
+
+
+@media screen and (max-width: 640px){
+	.filter{
+
+	p.eve-plan{
+		text-align: left;
+		margin-bottom: 18px;
+	}
+
+	ul{
+		text-align: left;
+
+		li{
+			margin: 8px 18px 8px 0;
+			padding: 6px 14px 6px 14px;		
+			font-size: 1rem;
+			margin-right: 52px;
+
+		}
+	}
+}
+
+	p.or-filter{
+		text-align: left;
+	}
+
+
+	select.eve-select-city{
+	float: left;
+	margin-bottom: 28px;
+	max-width: 100%;
+		width: 100%;
+}
+
+
+input.eve-select-date{
+	float: left;
+	margin-bottom: 28px;
+	max-width: 100%;
+		width: 100%;
+}
+
+
+	button.eve-srch_btn{
+		float: left;
+		max-width: 100%;
+		width: 100%;
+	}
+}
