@@ -1,0 +1,281 @@
+.story-wrapper{
+    @extend %leftfull;
+    margin-bottom: 18px;
+    @extend %pos-relative;
+    @extend %overflow;
+}
+
+.up-head{
+    @extend %leftfull;
+    margin: 48px 0 22px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cecece;
+
+    p.home-side_heading{
+        @extend %left;
+        font-size: 1.375rem;
+        color: #333;
+        text-transform: capitalize;
+    }
+
+    p.more{
+        @extend %right;
+        margin-top: 6px;
+        font-size: 0.875rem;
+        color: rgba(51, 51, 51, 0.58);
+        text-transform: capitalize;
+
+        .icon{
+            @extend %right;
+            margin-top: -2px;
+            color: rgba(51, 51, 51, 0.58);
+            font-size: 1rem;            
+            margin-left: 4px;
+            line-height: 1;
+        }
+
+        &:hover{
+            color: #446a96;
+            .icon{
+                color: #446a96;
+            }
+        }
+    }
+}
+
+.heart {
+    @extend %right;
+    @extend %pos-absolute;
+    right: -8px;
+    top: 10px;
+    z-index: 5;
+  cursor: pointer;
+  height: 18px;
+  width: 50px;
+  background: url(../../../img/pin/web_heart_animation.png);
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+ }
+
+ .eve-in {
+    @extend %right;
+    @extend %pos-absolute;
+    right: -8px;
+    top: 10px;
+    z-index: 5;
+  cursor: pointer;
+  height: 18px;
+  width: 50px;
+  background: url(../../../img/pin/interest_animation.png);
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+ }
+
+ .heart:hover {
+  background-position:right;
+ }
+
+ .eve-in:hover {
+  background-position:right;
+ }
+
+ .red-heart {
+  background-position:right;
+ }
+
+ .red-eve-in {
+  background-position:right;
+ }
+
+ .animating {
+  animation: heart-burst .8s steps(28) 1;
+ }
+
+ @keyframes heart-burst {
+ from {background-position:left;}
+ to { background-position:righ;}
+ }
+
+ @keyframes eve-in-burst {
+ from {background-position:left;}
+ to { background-position:righ;}
+ }
+
+.red-color{
+    color: red;
+}
+
+          
+.card_info{
+    @extend %leftfull;
+    @extend %pos-relative;
+    @include box-sizing(boxsizing);
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+
+    h3.story_heading{
+        @extend %leftfull;
+        margin-bottom: 4px;
+        text-transform: capitalize;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: rgba(51, 51, 51, 0.88);
+        font-family: 'gilroyextrabold';
+    }
+
+    p.blog_description{
+        @extend %leftfull;
+        margin-bottom: 18px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #333333;
+
+    }
+
+}
+
+.card_bottom{
+    @extend %leftfull;
+    @include box-sizing(boxsizing);
+    padding: 9px 14px 6px 14px;
+    border: 1px solid rgba(51, 51, 51, 0.18);
+    background-color: transparent;
+
+    .soco{
+        @extend %left;
+        margin-right: 14px;
+        .icon{
+            @extend %left;
+            margin: 2px 7px 0 0;
+            color: rgba(51, 51, 51, 0.8);
+            font-size: 0.875rem;
+        }
+
+        .icon-eye_bottom{
+            font-size: 1rem;
+        }
+
+        span{
+            @extend %left;
+            margin-top: 5px;
+            font-size: 0.75rem;
+            color: rgba(51, 51, 51, 0.8);
+        }
+
+        .ph{
+            color: rgba(255, 255, 255, 0.8)!important;
+        }
+    }
+
+    .icon-right{
+        float: right!important;
+        margin-right: -4px;
+    }
+
+
+}
+
+.str-blur{
+    @extend %leftfull;
+    height: 74px;
+    @extend %pos-absolute;
+    z-index: 4;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.78);
+    width: 140%;
+    margin-left: -20%;
+    margin-top: -26px;
+    filter: blur(34px);
+}
+
+.str-blur_bottom{
+    @extend %leftfull;
+    height: 46px;
+    @extend %pos-absolute;
+    z-index: 4;
+    bottom: 0px;
+    left: 0px;
+    background-color: #000000;
+    width: 140%;
+    margin-left: -20%;
+    margin-bottom: -10px;
+    filter: blur(34px);
+}
+
+.by-whom{
+        @extend %leftfull;
+        @extend %pos-absolute;
+        z-index: 5;
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+
+
+        .by_photo{
+            @extend %left;
+            width: 38px;
+            height: 38px;
+            @include border-radius(50%);
+            @extend %overflow;
+
+            img{
+                @extend %left;
+                margin-top: 0px;
+                max-width: 100%;
+            }
+            
+        }
+
+        p.by_name{
+            @extend %leftfull;
+            @extend %pos-absolute;
+            top: 0px;
+            left: 0px;
+            padding: 16px 0px 0px 58px;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.88);
+            text-align: left;
+            text-transform: capitalize;
+
+            span.u-follower{
+                float: left;
+                margin-top: 5px;
+                font-size: 0.6875rem;
+                text-align: left;
+
+                li{
+                    float: left;
+                }
+            }
+        }
+
+        
+    }
+
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .up-head{
+
+    p.home-side_heading{
+        font-size: 1.125rem;
+    }
+
+    p.more{
+        font-size: 0.75rem;
+    }
+}
+}
+
+
+
+

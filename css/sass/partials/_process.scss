@@ -1,0 +1,149 @@
+section.process{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding-top: 77px;
+	padding-bottom: 22px;
+	@extend %overflow;
+	background-color: #fff;
+	transform: skewY(-5deg);
+
+	.process-circle{
+		@extend %leftfull;
+		@extend %pos-relative;
+		@include box-sizing(boxsizing);
+		padding: 22px 0px;
+		margin-bottom: 98px;
+		text-align: center;
+
+		.right-arrow{
+			@extend %left;
+		    position: absolute;
+		    z-index: 3;
+		    right: -28px;
+    		top: 35%;
+			font-size: 2rem;
+		    line-height: 1;
+		    color: rgba(51, 51, 51, 0.7);		    
+		}
+
+		.right-arrow01{
+			top: 32%;
+		}
+
+		.left-arrow{
+			@extend %left;
+		    position: absolute;
+		    z-index: 3;
+		    left: -18px;
+    		top: 32%;
+			font-size: 2rem;
+		    line-height: 1;
+		    color: rgba(51, 51, 51, 0.7);
+		}
+
+		.left-arrow01{
+			left: -32px;
+    		top: 40%;
+		}
+
+		.left-arrow02{
+			left: -32px;
+    		top: 28%;
+		}
+
+		.down-arrow{
+			@extend %left;
+		    position: absolute;
+		    z-index: 3;
+		    left: 38%;
+    		bottom: -58px;
+			font-size: 2rem;
+		    line-height: 1;
+		    color: rgba(51, 51, 51, 0.7);
+		}
+
+		.down-arrow001{
+		    bottom: -44px;
+    		left: 44%;
+		}
+
+		.down-arrow001-2{
+			left: 48%;
+		}
+
+		.up-arrow001{
+			@extend %left;
+		    position: absolute;
+		    z-index: 3;
+		    left: 42%;
+    		bottom: -46px;
+			font-size: 2rem;
+		    line-height: 1;
+		    color: rgba(51, 51, 51, 0.7);
+		}
+
+		.on-mobile{
+			display: none;
+		}
+
+		h5{
+			@extend %leftfull;
+			margin-top: 18px;
+		    font-size: 1.125rem;
+		    line-height: 1.5;
+		    color: #333;
+		    text-transform: capitalize;
+		    letter-spacing: 1px;
+		    font-family: 'source_sans_proregular';
+		}
+	}
+
+}
+
+
+.col-right{
+	float: right!important;
+}
+
+
+@media screen and (max-width: 640px){
+	section.process{
+
+	.process-circle{
+		margin-bottom: 48px;
+
+		.right-arrow{
+			display: none;		    
+		}
+
+		.right-arrow01{
+			display: none;
+		}
+
+		.left-arrow{
+			display: none;
+		}
+
+		.left-arrow01{
+			display: none;
+		}
+
+		.left-arrow02{
+			display: none;
+		}
+
+		.down-arrow{
+			display: none;
+		}
+
+		.on-mobile{
+			display: block;
+		}
+
+		h5{
+			font-size: 1rem;
+		}
+	}
+
+}
+}

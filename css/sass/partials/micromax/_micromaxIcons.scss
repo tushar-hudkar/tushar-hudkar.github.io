@@ -1,0 +1,336 @@
+.micromaxIcons{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 42px 0;
+	margin-top: 68px;
+	border: 1px solid #e8e8e8;
+
+	.iconContainer{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);	
+            margin-top: 28px;
+
+		img{
+			@extend %left;
+            width: 102px;
+		}
+	}
+
+
+	.micromax1thingDescription{
+		@extend %left;
+		@include box-sizing(boxsizing);
+            margin-top: 10px;/* 
+            margin-left: 62px; */
+
+		h2.micromax1thingHeading{
+			@extend %left;
+			@include box-sizing(boxsizing);
+			font-size: 3.625rem;
+    line-height: 4.875rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-weight: normal;
+			font-family: 'brandongrotesque-thinbook';
+		}
+	}
+
+
+
+		p.micromax1thingText{
+			@extend %leftfull;
+			margin-top: 48px;
+			@include box-sizing(boxsizing);
+			font-size: 1rem;
+            word-spacing: 2px;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewaylight';		
+		}
+
+
+
+
+		.iconDownloaded {
+    @extend %leftfull;
+    z-index: 999;
+    line-height: 42px;
+        p.textHead{
+            @extend %leftfull;
+            @include box-sizing(boxsizing);
+            text-align: left;
+            margin-top: 48px;
+            font-size: 1rem;
+            color: #000;
+            line-height: 1.7rem;
+            font-family: 'ralewaysemibold';
+        }
+        .overflow{
+            @extend %leftfull;
+            overflow-x: hidden;
+    .nav {
+        @extend %leftfull;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+        li {
+            @extend %left;
+            @extend %pos-relative;
+            text-transform: capitalize;
+            margin-right: 122px;
+            margin-top: 22px;
+
+            &:last-child{
+            	margin-right: 0;
+            }
+
+            img.mainIcon{
+            	max-width: 100%;
+                width: 70px;
+            	@extend %left;
+            }
+            img.topNot{
+                @extend %pos-absolute;
+                right: -8px;
+                top: -8px;
+                max-width: 100%;
+                width: 23px;
+            }
+            img.topNotPluse{
+                @extend %pos-absolute;
+                right: -14px;
+                top: -8px;
+                max-width: 100%;
+                width: 34px;
+            }
+        }
+    }
+    }
+}
+
+.iconNotification {
+    @extend %leftfull;
+    z-index: 999;
+    line-height: 42px;
+
+        p.textHead{
+            @extend %leftfull;
+            @include box-sizing(boxsizing);
+            text-align: left;
+            margin-top: 48px;
+            font-size: 1rem;
+            color: #000;
+            line-height: 1.7rem;
+            font-family: 'ralewaysemibold';
+        }
+    .nav {
+        @extend %leftfull;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+            @extend %left;
+            text-transform: capitalize;
+            padding-right: 8%;
+            margin-top: 22px;
+            float: left;
+
+            &:first-child{
+                margin-left: 6px;
+            }
+
+            &:last-child{
+            	padding-right: 0;
+            }
+
+            img{
+            	max-width: 100%;
+                width: 38px;
+            	@extend %left;
+            }
+        }
+    }
+}
+
+		.iconNavigation {
+    @extend %leftfull;
+    z-index: 999;
+    line-height: 42px;
+    p.textHead{
+            @extend %leftfull;
+            @include box-sizing(boxsizing);
+            text-align: left;
+            margin-top: 48px;
+            font-size: 1rem;
+            color: #000;
+            line-height: 1.7rem;
+            font-family: 'ralewaysemibold';
+        }
+        .overflow{
+            @extend %leftfull;
+            overflow-x: hidden;
+    .nav {
+        @extend %leftfull;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+        li {
+            @extend %left;
+            text-transform: capitalize;
+            margin-right: 43px;
+            margin-top: 22px;
+
+            &:last-child{
+            	margin-right: 0%;
+            }
+
+            img{
+            	max-width: 100%;
+                width: 79px;
+            	@extend %left;
+            }
+        }
+    }
+    }
+}
+
+.iconsType{
+	@extend %leftfull;
+	p.textHead{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			text-align: left;
+			margin-top: 48px;
+			font-size: 1rem;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewaysemibold';
+		}
+
+		img{
+			max-width: 100%;
+            width: 500px;
+			@extend %left;
+			margin-top: 22px;
+		}
+
+}
+
+}
+
+
+@media screen and (max-width: 640px){
+
+    .micromaxIcons{
+
+    .iconContainer{
+
+        img{
+            width: 68px;
+        }
+    }
+
+
+    .micromax1thingDescription{
+
+        h2.micromax1thingHeading{
+            font-size: 2.5rem;
+        line-height: 44px;
+        }
+    }
+
+
+
+        p.micromax1thingText{ 
+        }
+
+
+
+
+.iconDownloaded {
+        p.textHead{
+        }
+        .overflow{
+            overflow-x: scroll;
+            &::-webkit-scrollbar { 
+                display: none; 
+            }
+    .nav {
+        min-width: 428px;
+        li {
+            margin-right: 36px;/* 
+            margin-top: 22px; */
+
+            img.mainIcon{
+                width: 56px;
+            }
+            img.topNot{
+                right: -8px;
+                top: -8px;
+                width: 23px;
+            }
+            img.topNotPluse{
+                right: -14px;
+                top: -8px;
+                width: 34px;
+            }
+        }
+    }
+    }
+}
+
+.iconNotification {
+
+        p.textHead{
+        }
+    .nav {
+        li {
+            padding-right: 5%;
+
+            img{
+                width: 38px;
+            }
+        }
+    }
+}
+
+        .iconNavigation {
+    p.textHead{
+        }
+        .overflow{
+            overflow-x: scroll;
+            &::-webkit-scrollbar { 
+                display: none; 
+            }
+    .nav {
+        min-width: 572px;
+        li {
+            margin-right: 32px;
+
+            img{
+                width: 54px;
+            }
+        }
+    }
+    }
+}
+
+.iconsType{
+    p.textHead{
+        }
+
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+
+}
+
+}
+
+
+}

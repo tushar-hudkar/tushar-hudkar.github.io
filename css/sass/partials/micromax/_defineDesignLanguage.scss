@@ -1,0 +1,155 @@
+.defineDesignLanguage{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 42px 0;
+	margin-top: 68px;
+	border: 1px solid #e8e8e8;
+
+	h2.micromax1thingHeading{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		padding: 38px 0 0 42px;
+		font-size: 3.625rem;
+	line-height: 4.875rem;
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: normal;
+		font-family: 'brandongrotesque-thinbook';
+	}
+	p.textHead{
+		@extend %leftfull;
+		text-transform: uppercase;
+		@include box-sizing(boxsizing);
+		padding: 38px 0 0 42px;
+		font-size: 1rem;
+		color: #000;
+		letter-spacing: 1px;
+		line-height: 1.7rem;
+		font-family: 'ralewaysemibold';	
+	}
+
+	.headingMarginTop{
+		margin-top: 58px;
+	}
+
+	.micromax1thingDescription{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		padding-right: 48px;
+
+	p.micromax1thingText{
+		@extend %left;
+		margin-top: 12px;
+		font-size: 0.9375rem;
+		color: #000;
+		line-height: 1.7rem;
+		font-family: 'ralewaylight';		
+	}
+	p.byTeam{
+			@extend %leftfull;
+			margin-top: 22px;
+			@include box-sizing(boxsizing);
+			padding-right: 44px;
+			text-align: right;
+			font-size: 0.9375rem;
+			font-family: 'ralewaysemibold';
+			color: #000;
+		}
+	}
+
+	ul.bigImpact{
+		@extend %leftfull;
+		padding-left: 60px;
+
+		li{
+			@extend %leftfull;
+			padding-left: 16px;
+			margin-top: 68px;
+		    font-size: 1.2rem;
+		    color: #000000;
+		    line-height: 1.7rem;
+		    font-family: 'ralewayregular';
+		}
+	}
+
+	.visualTrends{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		padding: 0 40px;
+		.visualTrendsBox{
+			@extend %left;
+			margin-top: 44px;
+			@extend %center;
+
+			img{
+				max-width: 100%;
+			}
+			p.byTeam{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			text-align: left;
+			margin-top: 10px;
+			font-size: 0.9375rem;
+			font-family: 'ralewaysemibold';
+			color: #000;
+		}
+		p.micromax1thingText{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		    margin-top: 6px;
+		text-align: left;
+		font-size: 0.9375rem;
+		color: #000;
+		line-height: 1.3rem;
+		font-family: 'ralewaylight';		
+	}
+		}
+	}
+}
+
+
+@media screen and (max-width: 640px){
+		
+		.defineDesignLanguage{
+
+	h2.micromax1thingHeading{
+		padding: 10px 0;
+		font-size: 2.5rem;
+    	line-height: 44px;
+	}
+
+	.headingMarginTop{
+	}
+
+	.micromax1thingDescription{
+		    padding-right: 12px;
+
+	p.micromax1thingText{		
+	}
+	p.byTeam{
+		}
+	}
+
+	ul.bigImpact{
+		padding-left: 18px;
+		li{
+			font-size: 1rem;
+			padding-left: 4px;
+			margin-top: 32px;
+		}
+	}
+
+	.visualTrends{
+		.visualTrendsBox{
+
+			img{
+			}
+			p.byTeam{
+		}
+		p.micromax1thingText{
+	}
+		}
+	}
+}
+
+}
+

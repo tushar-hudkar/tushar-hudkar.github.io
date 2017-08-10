@@ -1,0 +1,30 @@
+h2.quote{
+	@extend %leftfull;
+	@extend %center;
+	@include box-sizing(boxsizing);
+	font-size: 3.625rem;
+	line-height: 4.875rem;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: normal;
+	font-family: 'brandongrotesque-thinbook';
+}
+
+h3.quoteBy{
+		@extend %leftfull;
+		@extend %center;
+		font-size: 0.9375rem;
+	    line-height: 1.3rem;
+	    margin-top: 10px;
+	    color: #000;
+	    font-family: 'ralewayregular';
+	    font-weight: normal;
+	    text-transform: capitalize;
+	}
+
+
+@media screen and (max-width: 640px){
+	h2.quote{
+		font-size: 2.5rem;
+    	line-height: 44px;
+	}
+}

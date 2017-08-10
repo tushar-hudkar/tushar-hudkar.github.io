@@ -1,0 +1,40 @@
+h1.logo{   
+      @extend %left;
+
+      img{
+        @extend %left;
+        max-width: 100%;
+        width: 36px;
+      }
+
+      p.logo-title{
+        @extend %left;
+        margin-left: 4px;
+        font-size: 1.25rem;
+        line-height: 1.9;
+        letter-spacing: 2px;
+        font-family: 'gilroylight';
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      
+}
+
+@media screen and (max-width: 640px){
+  h1.logo{   
+        margin-left: 50%;
+    transform: translateX(-58%);
+
+      img{
+        width: 28px;
+        margin-top: 4px;
+      }
+
+      p.logo-title{
+        font-size: 1rem;
+        margin-top: 4px;
+        letter-spacing: 1px;
+      }
+      
+}
+}

@@ -1,0 +1,43 @@
+.micromaxScreen{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-top: 30px;
+	
+	@extend %pos-relative;
+	
+	.introScreen{
+		@extend %left;
+		@extend %center;
+		padding-top: 38px;
+		@include box-sizing(boxsizing);
+
+		p.screenHeading{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			margin-bottom: 18px;
+			font-size: 0.9375rem;
+			line-height: 1.625rem;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'ralewayregular';
+		}
+
+		img{
+			max-width: 100%;
+			width: 330px;
+			border: 1px solid #f7f7f7;
+		}
+
+		img.noBorder{
+			border: none;
+		}
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	
+	.micromaxScreen{
+		display: none;
+	}
+		
+}

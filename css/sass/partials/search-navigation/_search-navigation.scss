@@ -1,0 +1,140 @@
+.no-result{
+    @extend %leftfull;
+    @include box-sizing(boxsizing);
+    padding: 88px 0px 111px 0px;
+    @extend %center;
+    .icon{
+      font-size: 4.625rem;    
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    p{
+      @extend %leftfull;
+      font-size: 1.5rem;
+      line-height: 36px;
+      color: rgba(0, 0, 0, 0.5);
+      @extend %center;
+      text-transform: capitalize;
+    }
+
+}
+
+.navigation {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  margin-top: -74px;
+  @extend %pos-relative;
+  z-index: 9;
+  height: 74px;
+  text-align: center;
+  background: #fff;
+  @extend %ease;
+
+    ul {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+      li {
+      display: inline-block;
+      float: left;
+      padding: 29px 0px;
+      width: 172px;
+      color: #333;
+      font-size: 1rem;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      @extend %pointer;
+
+        a {
+        /* padding: 24px 40px; */
+        display: inline-block;
+      }
+    }
+
+    li.active{
+      color: #f1b21c;
+    }
+
+      .line {
+        position: absolute;
+        width: 172px;
+        bottom: -0px;
+        background: #f1b21c;
+        height: 4px;
+        left: 0px;
+        transition: all 0.3s ease-in-out;
+      }
+  }
+}
+
+.navigation li:nth-child(1).active ~ .line {
+  left: 0px;
+}
+.navigation li:nth-child(2).active ~ .line {
+  left: 172px;
+}
+.navigation li:nth-child(3).active ~ .line {
+  left: 344px;
+}
+.navigation li:nth-child(4).active ~ .line {
+  left: 516px;
+}
+.navigation li:nth-child(5).active ~ .line {
+  left: 688px;
+}
+.navigation li:nth-child(6).active ~ .line {
+  left: 860px;
+}
+
+
+@media screen and (max-width: 640px){
+  .navigation {
+  margin-top: -48px;
+  margin-bottom: 28px;
+  height: 48px;
+  overflow-x: auto;
+
+    ul {
+      width: 564px;
+      /* background-color: brown; */
+      li {
+      padding: 18px 0px;
+      width: 94px;
+
+        a {
+      }
+    }
+
+    li.active{
+    }
+
+      .line {
+        width: 94px;
+      }
+  }
+}
+
+.navigation li:nth-child(1).active ~ .line {
+  left: 0px;
+}
+.navigation li:nth-child(2).active ~ .line {
+  left: 94px;
+}
+.navigation li:nth-child(3).active ~ .line {
+  left: 188px;
+}
+.navigation li:nth-child(4).active ~ .line {
+  left: 282px;
+}
+.navigation li:nth-child(5).active ~ .line {
+  left: 376px;
+}
+.navigation li:nth-child(6).active ~ .line {
+  left: 470px;
+}
+
+
+}

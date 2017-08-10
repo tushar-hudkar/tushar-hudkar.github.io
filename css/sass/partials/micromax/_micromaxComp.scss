@@ -1,0 +1,312 @@
+.micromaxComp{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	padding: 42px 0;
+	margin-top: 68px;
+	border: 1px solid #f7f7f7;
+
+	h2.micromax1thingHeading{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		padding: 38px 0 0 38px;
+		font-size: 3rem;
+		line-height: 3.875rem;
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: normal;
+		font-family: 'brandongrotesque-thinbook';
+	}
+
+	.headingMarginTop{
+		margin-top: 58px;
+	}
+
+	.micromax1thingDescription{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		padding-right: 48px;
+
+		p.textHead{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 1rem;
+			color: #000;
+			line-height: 1.7rem;
+			font-family: 'ralewayregular';	
+		}
+	p.micromax1thingText{
+		@extend %left;
+		margin-top: 12px;
+		font-size: 0.9375rem;
+		color: #000;
+		line-height: 1.7rem;
+		font-family: 'ralewaylight';		
+	}
+	p.byTeam{
+			@extend %leftfull;
+			margin-top: 22px;
+			@include box-sizing(boxsizing);
+			padding-right: 44px;
+			text-align: right;
+			font-size: 0.9375rem;
+			font-family: 'ralewaysemibold';
+			color: #000;
+		}
+	}
+
+	ul.bigImpact{
+		@extend %leftfull;
+		padding-left: 60px;
+
+		li{
+			@extend %leftfull;
+			padding-left: 16px;
+			margin-top: 68px;
+		    font-size: 1.2rem;
+		    color: #000000;
+		    line-height: 1.7rem;
+		    font-family: 'ralewayregular';
+		}
+	}
+
+	
+
+	.iconProcess {
+    @extend %leftfull;
+    z-index: 999;
+    line-height: 42px;
+    .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        p.textHead{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		text-align: left;
+		margin-top: 48px;
+		margin-bottom: 28px;
+		font-size: 1rem;
+		color: #000;
+		line-height: 1.7rem;
+		font-family: 'ralewaysemibold';
+		}
+        li {
+            display: inline-block;
+            text-transform: capitalize;
+            margin-top: 62px;
+
+            padding-right: 2.3%;
+            padding-left: 2.3%;
+
+            &:first-child{padding-left: 0;}
+
+            img.iconProcessImg{
+            	max-width: 100%;
+            	width: 64px;
+            }
+
+            img.rightArrow{
+            	max-width: 100%;
+            	width: 22px;
+
+            }
+        }
+        .liMobilePaddingZero{
+        	padding-right: 0px!important;
+        }
+    }
+}
+
+.iconProcessMobile{
+    @extend %leftfull;
+    z-index: 999;
+    line-height: 42px;
+    .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        p.textHead{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		text-align: left;
+		margin-top: 48px;
+		margin-bottom: 28px;
+		font-size: 1rem;
+		color: #000;
+		line-height: 1.7rem;
+		font-family: 'ralewaysemibold';
+		}
+
+		.mobileFirstRow{
+			@extend %leftfull;
+        li.firstRow{
+            display: inline-block;
+            text-transform: capitalize;
+            margin-top: 12px;
+
+            padding-right: 3%;
+            padding-left: 3%;
+
+            //&:first-child{padding-left: 0;}
+
+            img.iconProcessImg{
+            	max-width: 100%;
+            	width: 64px;
+            }
+
+            img.rightArrow{
+            	max-width: 100%;
+            	width: 22px;
+
+            }
+        }
+        }
+
+        li.centerRow{
+        	@extend %leftfull;
+            display: inline-block;
+            text-transform: capitalize;
+            margin-top: 12px;
+            @extend %center;
+
+            padding-right: 3%;
+            padding-left: 3%;
+
+            &:first-child{padding-left: 0;}
+
+            img.iconProcessImg{
+            	max-width: 100%;
+            	width: 64px;
+            }
+
+            img.rightArrow{
+            	max-width: 100%;
+            	width: 14px;
+
+            }
+        }
+        .liMobilePaddingZero{
+        	padding-right: 0px!important;
+        }
+    }
+}
+
+	
+	p.textHead{
+		@extend %leftfull;
+		margin-top: 12px;
+		font-size: 1rem;
+		color: #000;
+		line-height: 1.7rem;
+		font-family: 'ralewaysemibold';	
+	}
+
+	.visualTrends{
+		@extend %leftfull;
+		.visualTrendsBox{
+			@extend %left;
+			margin-top: 44px;
+			@extend %center;
+
+			img{
+				max-width: 100%;
+			}
+			p.byTeam{
+			@extend %leftfull;
+			@include box-sizing(boxsizing);
+			padding-left: 24px;
+			text-align: left;
+			margin-top: 10px;
+			font-size: 0.9375rem;
+			font-family: 'ralewaysemibold';
+			color: #000;
+		}
+		p.micromax1thingText{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		    margin-top: 6px;
+		text-align: left;
+		padding-left: 24px;
+		font-size: 0.9375rem;
+		color: #000;
+		line-height: 1.3rem;
+		font-family: 'ralewaylight';		
+	}
+		}
+	}
+}
+
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (max-width: 640px){
+	.micromaxComp{
+
+	h2.micromax1thingHeading{
+		padding: 10px 0;
+	}
+
+	.micromax1thingDescription{
+		p.textHead{	
+		}
+	p.micromax1thingText{		
+	}
+	p.byTeam{
+		}
+	}
+
+	ul.bigImpact{
+			padding-left: 22px;
+		li{
+			font-size: 1rem;
+			margin-top: 38px;
+		}
+	}
+
+	.iconsType{
+		p.textHead{
+		}
+		.appIcons{
+			img{
+		}
+	}
+		
+	}
+
+	.iconNavigation {
+    .nav {
+        p.textHead{
+		}
+        li {
+
+            &:last-child{
+            }
+
+            img{
+            }
+        }
+        .liMobilePaddingZero{
+        }
+    }
+}
+
+	
+	p.textHead{
+	}
+
+	.visualTrends{
+		.visualTrendsBox{
+
+			img{
+			}
+			p.byTeam{
+		}
+		p.micromax1thingText{	
+	}
+		}
+	}
+}
+}

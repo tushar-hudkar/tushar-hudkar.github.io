@@ -1,0 +1,18 @@
+.other-project{
+	@extend %leftfull;
+	@extend %pos-relative;
+	@include box-sizing(boxsizing);
+	padding: 82px 0px 134px 0px;
+	background-color: #f7f7f7;
+	transform: skewY(-5deg);
+}
+
+.other-project_heading{
+	@extend %leftfull;
+	font-size: 1.125rem;
+    margin-bottom: 18px;
+    font-family: 'gilroylight';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: rgba(51,51,51,.9);
+}

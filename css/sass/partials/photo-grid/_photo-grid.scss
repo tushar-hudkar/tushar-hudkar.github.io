@@ -1,0 +1,37 @@
+.photo-wrapper{
+	@extend %left;
+	@extend %pos-relative;
+	@extend %overflow;
+}
+
+.photo-top{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	height: 60px; 
+	@extend %pos-relative;
+	background-color: #fff; 
+	border: 1px solid rgba(51, 51, 51, 0.18);
+	border-bottom: none;
+}
+
+.photo-bottom{
+	@extend %leftfull;
+	padding: 14px;
+	background-color: #fff; 
+	@extend %pos-relative;
+	border: 1px solid rgba(51, 51, 51, 0.18);
+    border-top: none;
+    border-bottom: none;
+
+	p.img-title{
+        @extend %leftfull;
+        margin-bottom: 10px;
+        padding: 0px 22px 0px 0px;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #333;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: capitalize;
+    }
+}
