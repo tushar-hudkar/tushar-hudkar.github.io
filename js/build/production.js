@@ -1424,11 +1424,6 @@ y.params.hashnav&&y.hashnav&&y.hashnav.init(),y.params.a11y&&y.a11y&&y.a11y.init
 	window.UISearch = UISearch;
 
 } )( window );
-/*$(".to-top").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "700");
-  return false;
-});*/
-
 $(document).ready(function () {
 
     $(window).scroll(function () {

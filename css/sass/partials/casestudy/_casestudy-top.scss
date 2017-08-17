@@ -197,21 +197,22 @@
     		vertical-align: middle;
 
 		.btn_link{
-				display: inline-block;
-				max-width: 232px;
-				width: 100%;
-				background-color: #fff;
-				padding: 12px;
-				outline: none;
-				border: none;
-				border-bottom: 4px solid #446a96;
-				color: #333;
-				@include border-radius(0px);
-				font-size: 1rem;
-				line-height: 1.8;
-		    	@extend %ease;
-		    	@extend %pos-relative;
-		    	z-index: 2;
+			display: inline-block;
+			max-width: 232px;
+			width: 100%;
+			background-color: #fff;
+			padding: 12px;
+			outline: none;
+			border: none;
+			border-bottom: 4px solid #446a96;
+			color: #333;
+			@include border-radius(0px);
+			font-size: 1rem;
+			line-height: 1.8;
+	    	@extend %ease;
+	    	@extend %pos-relative;
+	    	z-index: 2;
+			cursor: pointer;
 
 		    	&:hover{
 		    		background-color: #446a96;

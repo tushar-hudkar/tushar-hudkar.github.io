@@ -14,7 +14,8 @@ section.blog{
 	@include box-sizing(boxsizing);
 	padding: 22px;
 	height: 306px;
-	background-color: #fff;
+	background-color: #fff;	
+	cursor: pointer;
 	text-align: center;
 	@extend %ease;
 	display: table;

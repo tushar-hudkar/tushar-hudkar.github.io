@@ -11,6 +11,7 @@ header.port-header{
       margin-bottom: 32px;
       @extend %pos-relative;
       text-align: center;
+      cursor: pointer;
 
       h1{
         display: inline-block;
@@ -21,6 +22,7 @@ header.port-header{
         @extend %uppercase;
         font-family: 'brandongrotesque-boldbook';
         text-align: center;
+        cursor: pointer;
         @extend %ease;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
@@ -76,6 +78,7 @@ ul.index-nav{
       color: rgba(51, 51, 51, 0.58);
       text-transform: capitalize;
       @extend %ease;
+      cursor: pointer;
 
       &:last-child{
         margin-right: 0px;

@@ -14,9 +14,10 @@
             display: inline-block;
             list-style: none;
             margin: 0px 16px;
+            cursor: pointer;
 
             &:first-child{
-                    margin-left: 6px;
+                margin-left: 6px;
             }
 
             a{
