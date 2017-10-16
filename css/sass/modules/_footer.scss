@@ -1,8 +1,9 @@
 .footer-port{
 	@extend %leftfull;
+    margin-top: -62px;
 	@include box-sizing(boxsizing);
-    padding: 72px 0px;
-	background-color: #fbfbfb;
+    padding: 148px 0 62px 0px;
+	/* background-color: #fe00ff; */
 
     ul.index-footer{
         @extend %leftfull;

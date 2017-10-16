@@ -18,6 +18,7 @@ p.section-heading{
 	@include box-sizing(boxsizing);
 	text-align: center;
 	background-color: #fff;
+	background: linear-gradient(to bottom,#ffdce4 0,#dde7ff 100%);
 	@extend %ease;	
 	cursor: pointer;
 	display: table;
@@ -136,6 +137,14 @@ p.section-heading{
 	}
 
 	}
+}
+
+.project-box-mx{
+	background: linear-gradient(to bottom,#fffbdc 0,#ddfff4 100%);
+}
+
+.project-box-fd{
+	background: linear-gradient(to bottom,#fff6dc 0,#ffeddd 100%);
 }
 
 

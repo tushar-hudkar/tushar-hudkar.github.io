@@ -1,10 +1,10 @@
 section.process{
 	@extend %leftfull;
+	margin-top: -62px;
 	@include box-sizing(boxsizing);
-	padding-top: 77px;
-	padding-bottom: 22px;
+	padding: 100px 0px 48px 0px;
 	@extend %overflow;
-	background-color: #fff;
+	background: linear-gradient(to bottom,rgba(229, 255, 247, 0.98) 0,rgba(0, 125, 59, 0.98) 300%);
 	transform: skewY(-5deg);
 
 	.process-circle{
@@ -91,7 +91,7 @@ section.process{
 			margin-top: 18px;
 		    font-size: 1.125rem;
 		    line-height: 1.5;
-		    color: #333;
+		    color: rgba(41, 88, 85, 0.74);
 		    text-transform: capitalize;
 		    letter-spacing: 1px;
 		    font-family: 'source_sans_proregular';

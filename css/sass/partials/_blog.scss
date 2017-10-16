@@ -2,8 +2,8 @@ section.blog{
 	@extend %leftfull;
 	@include box-sizing(boxsizing);
 	@extend %overflow;
-	background-color: #ffffff; 
-	padding: 77px 0px 148px 0px;
+	background: linear-gradient(to bottom,rgba(229, 255, 247, 0.98) 0,rgba(0, 125, 59, 0.98) 300%);
+	padding: 100px 0px 148px 0px;
 	transform: skewY(-5deg);
 }
 
@@ -30,7 +30,7 @@ section.blog{
 			z-index: 5;    
 		    font-size: 2.25rem;
 		    line-height: 1.5;
-		    color: #333;
+		    color: rgba(41,88,85,.74);
 		    letter-spacing: 1px;
 		    font-family: 'source_sans_prosemibold';
 		    text-align: center;
