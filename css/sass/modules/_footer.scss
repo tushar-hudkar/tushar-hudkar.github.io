@@ -3,7 +3,7 @@
     margin-top: -62px;
 	@include box-sizing(boxsizing);
     padding: 148px 0 62px 0px;
-	/* background-color: #fe00ff; */
+	background-color: #ffffff;
 
     ul.index-footer{
         @extend %leftfull;
@@ -134,10 +134,6 @@ ul.footer-social{
 
 
 @media screen and (max-width: 640px){
-
-    .footer-port{
-        padding: 42px 0px;
-    }
     
     ul.footer-nav{
             margin-bottom: 28px;
