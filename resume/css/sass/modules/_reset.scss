@@ -1,0 +1,211 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+    font-size: 0.875rem;
+    line-height: 1;
+    background-color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'lucida_granderegular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'lucida_granderegular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+body h1::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h2::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h3::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h4::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h5::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body h6::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body p::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body ul::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body li::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body table tr td::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body div::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+body span::selection {
+    color: #fff;
+    background-color: #323232;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

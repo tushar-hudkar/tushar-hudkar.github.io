@@ -1,0 +1,71 @@
+.skew-section{
+    @extend %leftfull;
+    transform: skewY(3deg);
+}
+
+section.resume-top{
+  @extend %leftfull;
+  margin-top: -100px; 
+  @include box-sizing(boxsizing);
+  padding: 138px 0 22px 0px;
+  background: #000; 
+  transform: skewY(-3deg);
+
+  h1{
+      @extend %leftfull;
+      font-size: 36px;
+      line-height: 1.5;
+      color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'brandongrotesque-boldbook';
+      text-align: center;
+      cursor: pointer;
+      @extend %ease;
+    }
+
+  p{
+    @extend %leftfull;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'gilroylight';
+    text-align: center;
+  }
+
+  ul.rsm-top-ul{
+    @extend %leftfull;
+    @extend %pos-relative;
+    display: inline-block;
+    text-align: center;
+
+    li{
+      display: inline-block;
+      list-style: none;
+      font-family: 'gilroylight';
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff;
+      @extend %ease;
+      cursor: pointer;
+
+      .loc{
+        float: left;
+        margin-top: 8px;
+      }
+
+      &:first-child{
+        float: left;
+        width: 258px;
+        text-align: left;
+      }
+      &:last-child{
+        float: right;
+        width: 258px;
+        text-align: right;
+      }
+    }
+  }
+}
