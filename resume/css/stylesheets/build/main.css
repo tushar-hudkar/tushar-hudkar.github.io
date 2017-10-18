@@ -955,7 +955,7 @@ a {
 
 /* line 6, ../sass/modules/_header.scss */
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto; }
 
 /* line 11, ../sass/modules/_header.scss */
@@ -1010,10 +1010,12 @@ section.resume-top {
       /* line 64, ../sass/modules/_header.scss */
       section.resume-top ul.rsm-top-ul li:first-child {
         float: left;
+        margin-left: 40px;
         width: 258px;
         text-align: left; }
-      /* line 69, ../sass/modules/_header.scss */
+      /* line 70, ../sass/modules/_header.scss */
       section.resume-top ul.rsm-top-ul li:last-child {
         float: right;
+        margin-right: 40px;
         width: 258px;
         text-align: right; }
