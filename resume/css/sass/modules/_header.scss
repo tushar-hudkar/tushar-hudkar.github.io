@@ -3,6 +3,11 @@
     transform: skewY(3deg);
 }
 
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 section.resume-top{
   @extend %leftfull;
   margin-top: -100px; 
