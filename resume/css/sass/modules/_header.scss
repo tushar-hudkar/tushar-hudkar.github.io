@@ -8,9 +8,16 @@
   margin: 0 auto;
 }
 
+.container{
+  @extend %leftfull;
+  @include box-sizing(boxsizing);
+  padding: 0 40px;
+}
+
 section.resume-top{
   @extend %leftfull;
-  margin-top: -100px; 
+  margin-top: -100px;
+  margin-bottom: 86px; 
   @include box-sizing(boxsizing);
   padding: 138px 0 22px 0px;
   background: #000; 
@@ -18,7 +25,7 @@ section.resume-top{
 
   h1{
       @extend %leftfull;
-      font-size: 36px;
+      font-size: 28px;
       line-height: 1.5;
       color: #fff;
       letter-spacing: 1px;
@@ -32,7 +39,7 @@ section.resume-top{
   p{
     @extend %leftfull;
     margin-bottom: 36px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     color: #fff;
     letter-spacing: 1px;
@@ -50,7 +57,7 @@ section.resume-top{
       display: inline-block;
       list-style: none;
       font-family: 'gilroylight';
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.5;
       color: #fff;
       @extend %ease;
@@ -63,14 +70,12 @@ section.resume-top{
 
       &:first-child{
         float: left;
-        margin-left: 40px;
-        width: 258px;
+        width: 198px;
         text-align: left;
       }
       &:last-child{
         float: right;
-        margin-right: 40px;
-        width: 258px;
+        width: 198px;
         text-align: right;
       }
     }

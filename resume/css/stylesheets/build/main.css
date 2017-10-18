@@ -14,7 +14,7 @@ Placeholders
 
 */
 /* line 80, ../sass/modules/_variables.scss */
-.skew-section, section.resume-top, section.resume-top h1, section.resume-top p, section.resume-top ul.rsm-top-ul {
+.skew-section, .container, section.resume-top, section.resume-top h1, section.resume-top p, section.resume-top ul.rsm-top-ul, .objective, .objective h4, .objective p {
   float: left;
   width: 100%; }
 
@@ -959,8 +959,18 @@ a {
   margin: 0 auto; }
 
 /* line 11, ../sass/modules/_header.scss */
+.container {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0 40px; }
+
+/* line 17, ../sass/modules/_header.scss */
 section.resume-top {
   margin-top: -100px;
+  margin-bottom: 86px;
   box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -971,9 +981,9 @@ section.resume-top {
   -webkit-transform: skewY(-3deg);
       -ms-transform: skewY(-3deg);
           transform: skewY(-3deg); }
-  /* line 19, ../sass/modules/_header.scss */
+  /* line 26, ../sass/modules/_header.scss */
   section.resume-top h1 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.5;
     color: #fff;
     letter-spacing: 1px;
@@ -981,41 +991,68 @@ section.resume-top {
     font-family: 'brandongrotesque-boldbook';
     text-align: center;
     cursor: pointer; }
-  /* line 32, ../sass/modules/_header.scss */
+  /* line 39, ../sass/modules/_header.scss */
   section.resume-top p {
     margin-bottom: 36px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     color: #fff;
     letter-spacing: 1px;
     font-family: 'gilroylight';
     text-align: center; }
-  /* line 43, ../sass/modules/_header.scss */
+  /* line 50, ../sass/modules/_header.scss */
   section.resume-top ul.rsm-top-ul {
     display: inline-block;
     text-align: center; }
-    /* line 49, ../sass/modules/_header.scss */
+    /* line 56, ../sass/modules/_header.scss */
     section.resume-top ul.rsm-top-ul li {
       display: inline-block;
       list-style: none;
       font-family: 'gilroylight';
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.5;
       color: #fff;
       cursor: pointer; }
-      /* line 59, ../sass/modules/_header.scss */
+      /* line 66, ../sass/modules/_header.scss */
       section.resume-top ul.rsm-top-ul li .loc {
         float: left;
         margin-top: 8px; }
-      /* line 64, ../sass/modules/_header.scss */
+      /* line 71, ../sass/modules/_header.scss */
       section.resume-top ul.rsm-top-ul li:first-child {
         float: left;
-        margin-left: 40px;
-        width: 258px;
+        width: 198px;
         text-align: left; }
-      /* line 70, ../sass/modules/_header.scss */
+      /* line 76, ../sass/modules/_header.scss */
       section.resume-top ul.rsm-top-ul li:last-child {
         float: right;
-        margin-right: 40px;
-        width: 258px;
+        width: 198px;
         text-align: right; }
+
+/* line 1, ../sass/partials/_objective.scss */
+.objective {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  /* line 5, ../sass/partials/_objective.scss */
+  .objective h4 {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'source_sans_prosemibold';
+    color: #000; }
+  /* line 14, ../sass/partials/_objective.scss */
+  .objective p {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000; }

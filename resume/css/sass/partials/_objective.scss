@@ -1,0 +1,22 @@
+.objective{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+
+	h4{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		font-size: 18px;
+		line-height: 1.5;
+		font-family: 'source_sans_prosemibold';
+		color: #000;
+	}
+
+	p{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		font-size: 15px;
+		line-height: 1.5;
+		color: #000;
+
+	}
+}
