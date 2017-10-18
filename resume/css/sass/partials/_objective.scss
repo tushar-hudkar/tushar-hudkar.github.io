@@ -2,21 +2,35 @@
 	@extend %leftfull;
 	@include box-sizing(boxsizing);
 
-	h4{
-		@extend %leftfull;
+	.left-container{
+		@extend %left;
+		width: 30%;
 		@include box-sizing(boxsizing);
-		font-size: 18px;
-		line-height: 1.5;
-		font-family: 'source_sans_prosemibold';
-		color: #000;
+
+		h4{
+			@extend %left;
+			font-size: 18px;
+			line-height: 1.5;
+			font-family: 'source_sans_prosemibold';
+			color: rgba(0, 0, 0, 0.8);
+		}
 	}
 
-	p{
-		@extend %leftfull;
+	.right-container{
+		@extend %right;
+		width: 70%;
 		@include box-sizing(boxsizing);
-		font-size: 15px;
-		line-height: 1.5;
-		color: #000;
 
+		p{
+			float: left;
+			@include box-sizing(boxsizing);
+			font-size: 15px;
+			line-height: 1.5;
+			color: rgba(0, 0, 0, 0.7);
+		}
 	}
+
+	
+
+	
 }

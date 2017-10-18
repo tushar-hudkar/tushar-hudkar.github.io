@@ -3,13 +3,19 @@
     transform: skewY(3deg);
 }
 
-.wrapper{
+.wrapper-top{
   max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .container{
   @extend %leftfull;
+  margin-bottom: 32px;
   @include box-sizing(boxsizing);
   padding: 0 40px;
 }
