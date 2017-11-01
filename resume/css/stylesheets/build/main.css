@@ -798,10 +798,11 @@ body {
   font-weight: normal;
   font-style: normal;
   font-family: 'lucida_granderegular';
+  font-family: 'brandongrotesque-regularbook';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 90, ../sass/modules/_reset.scss */
+/* line 91, ../sass/modules/_reset.scss */
 html {
   font-size: 0.875rem;
   line-height: 1;
@@ -811,11 +812,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 101, ../sass/modules/_reset.scss */
+/* line 102, ../sass/modules/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-/* line 105, ../sass/modules/_reset.scss */
+/* line 106, ../sass/modules/_reset.scss */
 body h1::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -823,7 +824,7 @@ body h1::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 110, ../sass/modules/_reset.scss */
+/* line 111, ../sass/modules/_reset.scss */
 body h2::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -831,7 +832,7 @@ body h2::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 115, ../sass/modules/_reset.scss */
+/* line 116, ../sass/modules/_reset.scss */
 body h3::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -839,7 +840,7 @@ body h3::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 120, ../sass/modules/_reset.scss */
+/* line 121, ../sass/modules/_reset.scss */
 body h4::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -847,7 +848,7 @@ body h4::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 125, ../sass/modules/_reset.scss */
+/* line 126, ../sass/modules/_reset.scss */
 body h5::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -855,7 +856,7 @@ body h5::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 130, ../sass/modules/_reset.scss */
+/* line 131, ../sass/modules/_reset.scss */
 body h6::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -863,7 +864,7 @@ body h6::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 135, ../sass/modules/_reset.scss */
+/* line 136, ../sass/modules/_reset.scss */
 body p::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -871,7 +872,7 @@ body p::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 140, ../sass/modules/_reset.scss */
+/* line 141, ../sass/modules/_reset.scss */
 body ul::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -879,7 +880,7 @@ body ul::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 145, ../sass/modules/_reset.scss */
+/* line 146, ../sass/modules/_reset.scss */
 body li::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -887,7 +888,7 @@ body li::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 150, ../sass/modules/_reset.scss */
+/* line 151, ../sass/modules/_reset.scss */
 body table tr td::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -895,7 +896,7 @@ body table tr td::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 155, ../sass/modules/_reset.scss */
+/* line 156, ../sass/modules/_reset.scss */
 body div::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -903,7 +904,7 @@ body div::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 160, ../sass/modules/_reset.scss */
+/* line 161, ../sass/modules/_reset.scss */
 body span::-moz-selection {
   color: #fff;
   background-color: #323232; }
@@ -911,7 +912,7 @@ body span::selection {
   color: #fff;
   background-color: #323232; }
 
-/* line 165, ../sass/modules/_reset.scss */
+/* line 166, ../sass/modules/_reset.scss */
 article,
 aside,
 details,
@@ -925,32 +926,32 @@ nav,
 section {
   display: block; }
 
-/* line 179, ../sass/modules/_reset.scss */
+/* line 180, ../sass/modules/_reset.scss */
 input,
 select {
   vertical-align: middle; }
 
-/* line 185, ../sass/modules/_reset.scss */
+/* line 186, ../sass/modules/_reset.scss */
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: #ffffff; }
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
-  /* line 190, ../sass/modules/_reset.scss */
+  /* line 191, ../sass/modules/_reset.scss */
   html {
     font-size: 14px; }
 
-  /* line 194, ../sass/modules/_reset.scss */
+  /* line 195, ../sass/modules/_reset.scss */
   body {
     font-size: 14px; } }
 @media only screen and (min-width: 200px) and (max-width: 640px) {
-  /* line 200, ../sass/modules/_reset.scss */
+  /* line 201, ../sass/modules/_reset.scss */
   html {
     font-size: 12px; }
 
-  /* line 203, ../sass/modules/_reset.scss */
+  /* line 204, ../sass/modules/_reset.scss */
   body {
     font-size: 12px; } }
-/* line 208, ../sass/modules/_reset.scss */
+/* line 209, ../sass/modules/_reset.scss */
 a {
   text-decoration: none;
   color: inherit; }
@@ -1062,8 +1063,9 @@ section.resume-top {
       font-size: 18px;
       line-height: 1.5;
       font-family: 'source_sans_prosemibold';
+      font-family: 'brandongrotesque-mediumbook';
       color: rgba(0, 0, 0, 0.8); }
-  /* line 19, ../sass/partials/_objective.scss */
+  /* line 20, ../sass/partials/_objective.scss */
   .objective .right-container {
     width: 70%;
     box-sizing: border-box;
@@ -1071,7 +1073,7 @@ section.resume-top {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
-    /* line 24, ../sass/partials/_objective.scss */
+    /* line 25, ../sass/partials/_objective.scss */
     .objective .right-container p {
       float: left;
       box-sizing: border-box;
