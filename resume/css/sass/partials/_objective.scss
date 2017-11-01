@@ -4,7 +4,7 @@
 
 	.left-container{
 		@extend %left;
-		width: 30%;
+		width: 20%;
 		@include box-sizing(boxsizing);
 
 		h4{
@@ -19,7 +19,7 @@
 
 	.right-container{
 		@extend %right;
-		width: 70%;
+		width: 80%;
 		@include box-sizing(boxsizing);
 
 		p{
