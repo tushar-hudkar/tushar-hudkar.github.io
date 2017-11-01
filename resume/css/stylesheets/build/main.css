@@ -969,7 +969,7 @@ a {
 
 /* line 11, ../sass/modules/_header.scss */
 .wrapper {
-  max-width: 800px;
+  max-width: 740px;
   margin: 0 auto; }
 
 /* line 16, ../sass/modules/_header.scss */
@@ -1131,6 +1131,6 @@ section.resume-top {
       -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.5;
       color: rgba(0, 0, 0, 0.7); }
