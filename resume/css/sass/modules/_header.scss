@@ -13,9 +13,15 @@
   margin: 0 auto;
 }
 
+.container-top{
+  @extend %leftfull;
+  @include box-sizing(boxsizing);
+  padding: 0 40px;
+}
+
 .container{
   @extend %leftfull;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   @include box-sizing(boxsizing);
   padding: 0 40px;
 }
@@ -25,65 +31,118 @@ section.resume-top{
   margin-top: -100px;
   margin-bottom: 86px; 
   @include box-sizing(boxsizing);
-  padding: 138px 0 22px 0px;
+  padding: 128px 0 0px 0px;
   background: #000; 
   transform: skewY(-3deg);
 
   h1{
       @extend %leftfull;
-      font-size: 28px;
+      font-size: 22px;
       line-height: 1.5;
       color: #fff;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      font-family: 'brandongrotesque-boldbook';
+      font-family: 'brandongrotesque-blackbook';
       text-align: center;
       cursor: pointer;
       @extend %ease;
     }
 
-  p{
+  p.dg{
     @extend %leftfull;
     margin-bottom: 36px;
     font-size: 15px;
     line-height: 1.5;
     color: #fff;
     letter-spacing: 1px;
-    font-family: 'gilroylight';
     text-align: center;
   }
 
-  ul.rsm-top-ul{
+  .rsm-top{
     @extend %leftfull;
     @extend %pos-relative;
-    display: inline-block;
-    text-align: center;
 
-    li{
-      display: inline-block;
-      list-style: none;
-      font-family: 'gilroylight';
-      font-size: 14px;
-      line-height: 1.5;
-      color: #fff;
-      @extend %ease;
-      cursor: pointer;
+    .left{
+      @extend %left;
 
-      .loc{
-        float: left;
-        margin-top: 8px;
-      }
+      .left-1{
+        @extend %left;
+        margin-bottom: 16px;
 
-      &:first-child{
-        float: left;
-        width: 198px;
-        text-align: left;
+        img{
+          float: left;
+          max-width: 100%;
+          margin-top: 2px; 
+          margin-right: 12px;
+        }
+
+        p{
+          @extend %left;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #fff;
+          text-align: left;
+          @extend %ease;
+          cursor: pointer;
+        }
       }
-      &:last-child{
-        float: right;
-        width: 198px;
-        text-align: right;
-      }
+      
     }
+
+    .center{
+      @extend %left;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .center-1{
+        @extend %left;
+
+        img{
+          float: left;
+          max-width: 100%;
+          margin-top: 2px; 
+          margin-right: 12px;
+        }
+
+        p{
+          @extend %left;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #fff;
+          text-align: left;
+          @extend %ease;
+          cursor: pointer;
+        }
+      }
+      
+    }
+
+    .right{
+      @extend %right;
+
+      .right-1{
+        @extend %left;
+
+        img{
+          float: left;
+          max-width: 100%;
+          margin-top: 2px; 
+          margin-right: 12px;
+        }
+
+        p{
+          @extend %left;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #fff;
+          text-align: left;
+          @extend %ease;
+          cursor: pointer;
+        }
+      }
+      
+    }
+    
   }
 }
