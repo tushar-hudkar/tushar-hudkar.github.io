@@ -18,7 +18,7 @@ Placeholders
   float: left; }
 
 /* line 80, ../sass/modules/_variables.scss */
-section.resume-top, section.resume-top h1, section.resume-top p.dg, .resume-info, .resume-info .rsm-top-R ul, .resume-info .rsm-top-R ul li, .objective {
+.container, section.resume-top, section.resume-top h1, section.resume-top p.dg, .resume-info, .resume-info .rsm-top-R ul, .resume-info .rsm-top-R ul li, .objective {
   float: left;
   width: 100%; }
 
@@ -962,15 +962,25 @@ a {
   margin: 0 auto; }
 
 /* line 6, ../sass/modules/_header.scss */
+.container {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px 28px;
+  background: #fff; }
+
+/* line 13, ../sass/modules/_header.scss */
 section.resume-top {
   box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding: 28px 0px;
+  padding: 28px;
   background: #fff; }
-  /* line 13, ../sass/modules/_header.scss */
+  /* line 20, ../sass/modules/_header.scss */
   section.resume-top h1 {
     font-size: 22px;
     line-height: 1.5;
@@ -981,7 +991,7 @@ section.resume-top {
     font-family: 'brandongrotesque-blackbook';
     text-align: center;
     cursor: pointer; }
-  /* line 27, ../sass/modules/_header.scss */
+  /* line 34, ../sass/modules/_header.scss */
   section.resume-top p.dg {
     font-size: 18px;
     line-height: 1.5;
@@ -989,61 +999,61 @@ section.resume-top {
     letter-spacing: 1px;
     text-align: center; }
 
-/* line 41, ../sass/modules/_header.scss */
+/* line 48, ../sass/modules/_header.scss */
 .resume-info {
   padding-bottom: 38px;
   border-bottom: 1px solid #333; }
-  /* line 47, ../sass/modules/_header.scss */
+  /* line 54, ../sass/modules/_header.scss */
   .resume-info .rsm-top-l {
-    width: 70%; }
-    /* line 50, ../sass/modules/_header.scss */
+    width: 68%; }
+    /* line 57, ../sass/modules/_header.scss */
     .resume-info .rsm-top-l p {
       font-size: 17px;
       line-height: 1.5;
-      color: #000;
+      color: rgba(0, 0, 0, 0.76);
       text-align: left; }
-      /* line 58, ../sass/modules/_header.scss */
+      /* line 65, ../sass/modules/_header.scss */
       .resume-info .rsm-top-l p span.half-highlight {
         background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.2) 50%);
         background-size: 200% 28%;
         background-repeat: repeat-x;
         background-position: -100% 86%;
         transition: background-position .5s; }
-  /* line 67, ../sass/modules/_header.scss */
+  /* line 74, ../sass/modules/_header.scss */
   .resume-info .rsm-top-R {
-    width: 25%; }
-    /* line 73, ../sass/modules/_header.scss */
+    width: 27%; }
+    /* line 80, ../sass/modules/_header.scss */
     .resume-info .rsm-top-R ul li {
       list-style: none;
       margin-bottom: 6px; }
-      /* line 78, ../sass/modules/_header.scss */
+      /* line 85, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li:last-child {
         margin-bottom: 0px; }
-      /* line 82, ../sass/modules/_header.scss */
+      /* line 89, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li img {
         float: left;
         max-width: 100%;
         width: 15px;
         margin-top: 3px;
         margin-right: 12px; }
-      /* line 90, ../sass/modules/_header.scss */
+      /* line 97, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li img.loco {
         width: 16px; }
-      /* line 94, ../sass/modules/_header.scss */
+      /* line 101, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span {
         float: left;
         font-size: 16px;
-        color: #000;
+        color: rgba(0, 0, 0, 0.76);
         cursor: pointer;
         line-height: 1.5; }
-      /* line 102, ../sass/modules/_header.scss */
+      /* line 109, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span.underline {
         background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.7) 50%);
         background-size: 200% 10%;
         background-repeat: repeat-x;
         background-position: -100% 82%;
         transition: background-position .5s; }
-      /* line 110, ../sass/modules/_header.scss */
+      /* line 117, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span.con {
         font-size: 15px; }
 
