@@ -1,45 +1,21 @@
-.skew-section{
-    @extend %leftfull;
-    transform: skewY(3deg);
-}
-
-.wrapper-top{
+.wrapper{
   max-width: 800px;
   margin: 0 auto;
 }
 
-.wrapper{
-  max-width: 740px;
-  margin: 0 auto;
-}
-
-.container-top{
-  @extend %leftfull;
-  @include box-sizing(boxsizing);
-  padding: 0 40px;
-}
-
-.container{
-  @extend %leftfull;
-  margin-bottom: 22px;
-  @include box-sizing(boxsizing);
-  padding: 0 40px;
-}
-
 section.resume-top{
   @extend %leftfull;
-  margin-top: -100px;
-  margin-bottom: 86px; 
   @include box-sizing(boxsizing);
-  padding: 128px 0 0px 0px;
-  background: #000; 
-  transform: skewY(-3deg);
+  padding: 28px 0px;
+  background: #fff; 
+
 
   h1{
       @extend %leftfull;
       font-size: 22px;
       line-height: 1.5;
-      color: #fff;
+      color: #000;
+      color: #ff708c;
       letter-spacing: 3px;
       text-transform: uppercase;
       font-family: 'brandongrotesque-blackbook';
@@ -50,128 +26,91 @@ section.resume-top{
 
   p.dg{
     @extend %leftfull;
-    margin-bottom: 36px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #fff;
+    color: #ff708c;
     letter-spacing: 1px;
     text-align: center;
   }
+}
 
-  .rsm-top{
-    @extend %leftfull;
-    @extend %pos-relative;
 
-    .left{
+
+
+
+.resume-info{
+  @extend %leftfull;
+  @extend %pos-relative;   
+  padding-bottom: 38px;
+  border-bottom: 1px solid #333; 
+
+  .rsm-top-l{
+    @extend %left;
+    width: 70%;
+    p{
       @extend %left;
+      font-size: 17px;
+      line-height: 1.5;
+      color: #000;
+      text-align: left;
 
-      .left-1{
-        @extend %left;
-        margin-bottom: 16px;
+
+      span.half-highlight{
+        background: linear-gradient(to right,transparent 50%,rgba(255, 112, 140, 0.2) 50%);
+        background-size: 200% 28%;
+        background-repeat: repeat-x;
+        background-position: -100% 86%;
+        transition: background-position .5s;
+        }
+    }
+  }
+  .rsm-top-R{
+    @extend %right;
+    width: 25%;
+
+    ul{
+      @extend %leftfull;
+      li{
+        @extend %leftfull;
+        list-style: none;
+        margin-bottom: 6px;
+
+        &:last-child{
+          margin-bottom: 0px;
+        }
 
         img{
           float: left;
           max-width: 100%;
-          width: 13px;
-          margin-top: 2px; 
-          margin-right: 12px;
-        }
-
-        p{
-          @extend %left;
-          font-size: 14px;
-          line-height: 1.5;
-          color: #fff;
-          text-align: left;
-          @extend %ease;
-          cursor: pointer;
-        }
-      }
-
-      .left-2{
-        @extend %left;
-
-        img{
-          float: left;
-          max-width: 100%;
-          width: 13px;
-          margin-top: 3px; 
+          width: 15px;
+          margin-top: 3px;
           margin-right: 12px;
         }
 
         img.loco{
-          margin-top: 3px;
+          width: 16px;
         }
 
-        p{
-          @extend %left;
-          font-size: 14px;
-          line-height: 1.5;
-          color: #fff;
-          text-align: left;
-          @extend %ease;
-          cursor: pointer;
-        }
-      }
-      
-    }
-
-    .center{
-      @extend %left;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-
-      .center-1{
-        @extend %left;
-
-        img{
+        span{
           float: left;
-          max-width: 100%;
-          width: 13px;
-          margin-top: 4px;
-          margin-right: 12px;
+          font-size: 16px;
+          color: #000;
+          cursor: pointer;
+          line-height: 1.5;
         }
 
-        p{
-          @extend %left;
-          font-size: 14px;
-          line-height: 1.5;
-          color: #fff;
-          text-align: left;
-          @extend %ease;
-          cursor: pointer;
+        span.underline{
+          background: linear-gradient(to right,transparent 50%,rgba(255, 112, 140, 0.7) 50%);
+          background-size: 200% 10%;
+          background-repeat: repeat-x;
+          background-position: -100% 82%;
+          transition: background-position .5s;
+        }
+
+        span.con{
+          font-size: 15px;
         }
       }
-      
     }
-
-    .right{
-      @extend %right;
-
-      .right-1{
-        @extend %left;
-
-        img{
-          float: left;
-          max-width: 100%;
-          width: 14px;
-          margin-top: 2px; 
-          margin-right: 12px;
-        }
-
-        p{
-          @extend %left;
-          font-size: 14px;
-          line-height: 1.5;
-          color: #fff;
-          text-align: left;
-          @extend %ease;
-          cursor: pointer;
-        }
-      }
-      
-    }
-    
   }
 }
