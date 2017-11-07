@@ -19,21 +19,19 @@ section.resume-top{
 
   h1{
       @extend %leftfull;
-      font-size: 22px;
+      font-size: 24px;
       line-height: 1.5;
-      color: #000;
       color: #ff708c;
       letter-spacing: 3px;
       text-transform: uppercase;
       font-family: 'brandongrotesque-blackbook';
       text-align: center;
-      cursor: pointer;
       @extend %ease;
     }
 
   p.dg{
     @extend %leftfull;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     color: #ff708c;
     letter-spacing: 1px;
@@ -48,8 +46,7 @@ section.resume-top{
 .resume-info{
   @extend %leftfull;
   @extend %pos-relative;   
-  padding-bottom: 38px;
-  border-bottom: 1px solid #333; 
+  margin-bottom: 38px;
 
   .rsm-top-l{
     @extend %left;
