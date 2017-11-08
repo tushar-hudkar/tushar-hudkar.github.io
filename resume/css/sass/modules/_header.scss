@@ -51,6 +51,7 @@ section.resume-top{
   .rsm-top-l{
     @extend %left;
     width: 68%;
+
     p{
       @extend %leftfull;
       font-size: 17px;
@@ -60,7 +61,6 @@ section.resume-top{
 
 
       span.half-highlight{
-        float: left;
         background: linear-gradient(to right,transparent 50%,rgba(255, 112, 140, 0.2) 50%);
         background-size: 200% 28%;
         background-repeat: repeat-x;

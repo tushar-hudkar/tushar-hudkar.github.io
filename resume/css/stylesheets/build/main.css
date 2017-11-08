@@ -1003,15 +1003,14 @@ section.resume-top {
   /* line 51, ../sass/modules/_header.scss */
   .resume-info .rsm-top-l {
     width: 68%; }
-    /* line 54, ../sass/modules/_header.scss */
+    /* line 55, ../sass/modules/_header.scss */
     .resume-info .rsm-top-l p {
       font-size: 17px;
       line-height: 1.5;
       color: rgba(0, 0, 0, 0.6);
       text-align: left; }
-      /* line 62, ../sass/modules/_header.scss */
+      /* line 63, ../sass/modules/_header.scss */
       .resume-info .rsm-top-l p span.half-highlight {
-        float: left;
         background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.2) 50%);
         background-size: 200% 28%;
         background-repeat: repeat-x;
