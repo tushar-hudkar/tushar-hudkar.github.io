@@ -975,7 +975,7 @@ section.resume-top {
     .resume-info .rsm-top-l p {
       font-size: 17px;
       line-height: 1.5;
-      color: rgba(0, 0, 0, 0.76);
+      color: rgba(0, 0, 0, 0.6);
       text-align: left; }
       /* line 62, ../sass/modules/_header.scss */
       .resume-info .rsm-top-l p span.half-highlight {
@@ -1008,7 +1008,7 @@ section.resume-top {
       .resume-info .rsm-top-R ul li span {
         float: left;
         font-size: 16px;
-        color: rgba(0, 0, 0, 0.76);
+        color: rgba(0, 0, 0, 0.6);
         cursor: pointer;
         line-height: 1.5; }
       /* line 106, ../sass/modules/_header.scss */
@@ -1049,7 +1049,7 @@ ul.single-point {
     margin-bottom: 3px;
     font-size: 17px;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.76);
+    color: rgba(0, 0, 0, 0.6);
     text-align: left;
     text-transform: capitalize; }
     /* line 35, ../sass/partials/_objective.scss */
@@ -1070,7 +1070,7 @@ h4.m-hd {
 h5.s-hd {
   font-size: 19px;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.76);
+  color: rgba(0, 0, 0, 0.7);
   font-family: 'brandongrotesque-mediumbook';
   text-transform: capitalize;
   letter-spacing: 1px; }
@@ -1080,7 +1080,7 @@ h6.sb-hd {
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.76);
+  color: rgba(0, 0, 0, 0.6);
   font-family: brandongrotesque-regularbook;
   text-transform: capitalize;
   letter-spacing: 1px; }
@@ -1102,7 +1102,7 @@ ul.exp-point {
     margin-bottom: 8px;
     font-size: 17px;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.76);
+    color: rgba(0, 0, 0, 0.5);
     text-align: left;
     list-style-type: circle; }
     /* line 94, ../sass/partials/_objective.scss */

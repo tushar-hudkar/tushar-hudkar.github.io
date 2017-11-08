@@ -28,7 +28,7 @@ ul.single-point{
 		margin-bottom: 3px;
 		font-size: 17px;
         line-height: 1.3;
-        color: rgba(0, 0, 0, 0.76);
+        color: rgba(0, 0, 0, 0.6);
         text-align: left;
         text-transform: capitalize;
 
@@ -54,7 +54,7 @@ h5.s-hd{
 	@extend %leftfull;
 	font-size: 19px;
 	line-height: 1.5;
-	color: rgba(0,0,0,.76);
+	color: rgba(0,0,0,.7);
 	font-family: 'brandongrotesque-mediumbook';
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -65,7 +65,7 @@ h6.sb-hd{
 	margin-bottom: 8px;
 	font-size: 16px;
 	line-height: 1.5;
-	color: rgba(0,0,0,.76);
+	color: rgba(0,0,0,.6);
 	font-family: brandongrotesque-regularbook;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -87,7 +87,7 @@ ul.exp-point{
 		margin-bottom: 8px;
 		font-size: 17px;
         line-height: 1.3;
-        color: rgba(0, 0, 0, 0.76);
+        color: rgba(0, 0, 0, 0.5);
         text-align: left;
         list-style-type: circle;
 
