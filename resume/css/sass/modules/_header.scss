@@ -52,7 +52,7 @@ section.resume-top{
     @extend %left;
     width: 68%;
     p{
-      @extend %left;
+      @extend %leftfull;
       font-size: 17px;
       line-height: 1.5;
       color: rgba(0, 0, 0, 0.6);
@@ -60,6 +60,7 @@ section.resume-top{
 
 
       span.half-highlight{
+        float: left;
         background: linear-gradient(to right,transparent 50%,rgba(255, 112, 140, 0.2) 50%);
         background-size: 200% 28%;
         background-repeat: repeat-x;
