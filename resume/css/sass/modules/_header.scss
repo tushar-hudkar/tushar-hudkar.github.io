@@ -59,6 +59,9 @@ section.resume-top{
       color: rgba(0, 0, 0, 0.6);
       text-align: left;
 
+      .fst{
+        padding: 0 3px;
+      }
 
       span.half-highlight{
         background: linear-gradient(to right,transparent 50%,rgba(255, 112, 140, 0.2) 50%);

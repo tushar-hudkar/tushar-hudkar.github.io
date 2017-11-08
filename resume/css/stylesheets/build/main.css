@@ -1009,48 +1009,51 @@ section.resume-top {
       line-height: 1.5;
       color: rgba(0, 0, 0, 0.6);
       text-align: left; }
-      /* line 63, ../sass/modules/_header.scss */
+      /* line 62, ../sass/modules/_header.scss */
+      .resume-info .rsm-top-l p .fst {
+        padding: 0 3px; }
+      /* line 66, ../sass/modules/_header.scss */
       .resume-info .rsm-top-l p span.half-highlight {
         background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.2) 50%);
         background-size: 200% 28%;
         background-repeat: repeat-x;
         background-position: -100% 86%;
         transition: background-position .5s; }
-  /* line 72, ../sass/modules/_header.scss */
+  /* line 75, ../sass/modules/_header.scss */
   .resume-info .rsm-top-R {
     width: 27%; }
-    /* line 78, ../sass/modules/_header.scss */
+    /* line 81, ../sass/modules/_header.scss */
     .resume-info .rsm-top-R ul li {
       list-style: none;
       margin-bottom: 6px; }
-      /* line 83, ../sass/modules/_header.scss */
+      /* line 86, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li:last-child {
         margin-bottom: 0px; }
-      /* line 87, ../sass/modules/_header.scss */
+      /* line 90, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li img {
         float: left;
         max-width: 100%;
         width: 15px;
         margin-top: 3px;
         margin-right: 12px; }
-      /* line 95, ../sass/modules/_header.scss */
+      /* line 98, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li img.loco {
         width: 16px; }
-      /* line 99, ../sass/modules/_header.scss */
+      /* line 102, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span {
         float: left;
         font-size: 16px;
         color: rgba(0, 0, 0, 0.6);
         cursor: pointer;
         line-height: 1.5; }
-      /* line 107, ../sass/modules/_header.scss */
+      /* line 110, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span.underline {
         background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.7) 50%);
         background-size: 200% 10%;
         background-repeat: repeat-x;
         background-position: -100% 82%;
         transition: background-position .5s; }
-      /* line 115, ../sass/modules/_header.scss */
+      /* line 118, ../sass/modules/_header.scss */
       .resume-info .rsm-top-R ul li span.con {
         font-size: 15px; }
 
