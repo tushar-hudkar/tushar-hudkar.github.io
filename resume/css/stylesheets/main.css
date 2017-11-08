@@ -1049,7 +1049,7 @@ ul.single-point {
     margin-bottom: 3px;
     font-size: 17px;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.54);
     text-align: left;
     text-transform: capitalize; }
     /* line 35, ../sass/partials/_objective.scss */
@@ -1102,7 +1102,7 @@ ul.exp-point {
     margin-bottom: 8px;
     font-size: 17px;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.54);
     text-align: left;
     list-style-type: circle; }
     /* line 94, ../sass/partials/_objective.scss */
