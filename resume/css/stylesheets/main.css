@@ -926,7 +926,7 @@ a {
 
 /* line 1, ../sass/modules/_header.scss */
 .wrapper {
-  max-width: 800px;
+  max-width: 817px;
   margin: 0 auto; }
 
 /* line 6, ../sass/modules/_header.scss */
@@ -1055,8 +1055,15 @@ ul.single-point {
     /* line 35, ../sass/partials/_objective.scss */
     ul.single-point li:last-child {
       margin-bottom: 20px; }
+  /* line 40, ../sass/partials/_objective.scss */
+  ul.single-point li.bld-l {
+    color: rgba(0, 0, 0, 0.7); }
+  /* line 43, ../sass/partials/_objective.scss */
+  ul.single-point li.bld-l2 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6); }
 
-/* line 42, ../sass/partials/_objective.scss */
+/* line 50, ../sass/partials/_objective.scss */
 h4.m-hd {
   margin-bottom: 10px;
   font-size: 20px;
@@ -1066,7 +1073,11 @@ h4.m-hd {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-/* line 53, ../sass/partials/_objective.scss */
+/* line 61, ../sass/partials/_objective.scss */
+h4.s-line {
+  line-height: 1.2; }
+
+/* line 65, ../sass/partials/_objective.scss */
 h5.s-hd {
   font-size: 19px;
   line-height: 1.5;
@@ -1075,7 +1086,7 @@ h5.s-hd {
   text-transform: capitalize;
   letter-spacing: 1px; }
 
-/* line 63, ../sass/partials/_objective.scss */
+/* line 75, ../sass/partials/_objective.scss */
 h6.sb-hd {
   margin-bottom: 8px;
   font-size: 16px;
@@ -1084,11 +1095,11 @@ h6.sb-hd {
   font-family: brandongrotesque-regularbook;
   text-transform: capitalize;
   letter-spacing: 1px; }
-  /* line 73, ../sass/partials/_objective.scss */
+  /* line 85, ../sass/partials/_objective.scss */
   h6.sb-hd span.d-hd {
     font-size: 14px; }
 
-/* line 78, ../sass/partials/_objective.scss */
+/* line 90, ../sass/partials/_objective.scss */
 ul.exp-point {
   box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -1096,7 +1107,7 @@ ul.exp-point {
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   padding-left: 22px; }
-  /* line 84, ../sass/partials/_objective.scss */
+  /* line 96, ../sass/partials/_objective.scss */
   ul.exp-point li {
     list-style: none;
     margin-bottom: 8px;
@@ -1105,8 +1116,15 @@ ul.exp-point {
     color: rgba(0, 0, 0, 0.54);
     text-align: left;
     list-style-type: circle; }
-    /* line 94, ../sass/partials/_objective.scss */
+    /* line 106, ../sass/partials/_objective.scss */
     ul.exp-point li:last-child {
       margin-bottom: 20px; }
+    /* line 110, ../sass/partials/_objective.scss */
+    ul.exp-point li span.underline {
+      background: linear-gradient(to right, transparent 50%, rgba(255, 112, 140, 0.7) 50%);
+      background-size: 200% 10%;
+      background-repeat: repeat-x;
+      background-position: -100% 82%;
+      transition: background-position .5s; }
 
 /*# sourceMappingURL=main.css.map */
