@@ -39,7 +39,17 @@ ul.single-point{
 
 	li.bld-l{
 		color: rgba(0, 0, 0, 0.7);
+		text-transform: none;
 	}
+
+	li.clg{
+		color: rgba(0, 0, 0, 0.54);
+	}
+
+	span.d-hd{
+    	font-size: 14px;
+    	color: rgba(0,0,0,.5);
+    }
 }
 
 
@@ -80,6 +90,7 @@ h6.sb-hd{
 
     span.d-hd{
     	font-size: 14px;
+    	color: rgba(0,0,0,.5);
     }
 }
 
