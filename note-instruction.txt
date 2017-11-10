@@ -1,0 +1,9 @@
+1) npm init > for package.json
+
+2) package.json > name & verson
+
+very important step is>>> 
+A) npm install lodash --save
+	(save dependencies with npm install ** --save)
+B) create package.json
+	(npm init)

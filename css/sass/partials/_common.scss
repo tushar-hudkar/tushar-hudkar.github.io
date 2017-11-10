@@ -22,6 +22,7 @@ p.section-heading{
 	@extend %ease;	
 	cursor: pointer;
 	display: table;
+	@extend %overflow;
 
 	.right-arrow_project{
 		@extend %left;
@@ -40,6 +41,7 @@ p.section-heading{
 		-webkit-box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
 	    -moz-box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
 	    box-shadow: 0px 6px 18px 0px rgba(219,219,219,0.2);
+	    background: linear-gradient(to bottom,#ffd3dd 0,#ccdbff 100%);
 
 		.right-arrow_project{
 			@extend %ease;
@@ -141,10 +143,18 @@ p.section-heading{
 
 .project-box-mx{
 	background: linear-gradient(to bottom,#fffbdc 0,#ddfff4 100%);
+
+	&:hover{
+		background: linear-gradient(to bottom,#fff8bf 0,#b3ffe6 100%);
+	}
 }
 
 .project-box-fd{
 	background: linear-gradient(to bottom,#fff6dc 0,#ffeddd 100%);
+
+	&:hover{
+		background: linear-gradient(to bottom,#fdeec0 0,#ffe2c9 100%);
+	}
 }
 
 

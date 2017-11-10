@@ -3,6 +3,8 @@ section.work{
 	@include box-sizing(boxsizing);
 	padding: 100px 0px 148px 0px;
 	@extend %overflow;
+	@extend %pos-relative;
+  	z-index: 7;
 	background-color: #fff;
 	transform: skewY(-5deg);
 }
