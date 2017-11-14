@@ -18,7 +18,7 @@ Placeholders
   float: left; }
 
 /* line 80, ../sass/modules/_variables.scss */
-.container, section.resume-top, section.resume-top h1, section.resume-top p.dg, .resume-info, .resume-info .rsm-top-l p, .resume-info .rsm-top-R ul, .resume-info .rsm-top-R ul li, .resume-info2, ul.single-point, ul.single-point li, h4.m-hd, h5.s-hd, h6.sb-hd, ul.exp-point, ul.exp-point li {
+.container, section.resume-top, section.resume-top h1, section.resume-top p.dg, .resume-info, .resume-info .rsm-top-l p, .resume-info .rsm-top-R ul, .resume-info .rsm-top-R ul li, .resume-info2, ul.single-point, ul.single-point li, h4.m-hd, h5.s-hd, h6.sb-hd, ul.exp-point, ul.exp-point li, .cover-bg, .cover-layer, section.cover-top, section.cover-top h1, section.cover-top p.t-inf, .hello, .hello .grt, .hello p.description, .hello .cover-btm, .hello .cover-btm span.btm-name, .hello .cover-btm span.dgbtm {
   float: left;
   width: 100%; }
 
@@ -31,7 +31,7 @@ Placeholders
   position: relative; }
 
 /* line 96, ../sass/modules/_variables.scss */
-section.resume-top h1 {
+section.resume-top h1, section.cover-top h1 {
   transition: all 0.20s ease-in-out; }
 
 @font-face {
@@ -1163,3 +1163,123 @@ ul.exp-point {
       background-repeat: repeat-x;
       background-position: -100% 82%;
       transition: background-position .5s; }
+
+/* line 1, ../sass/partials/_cover.scss */
+.cover-bg {
+  height: 700px;
+  background: url(../../../img/cover-bg.jpg) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: inset 0px 0px 88px -24px black; }
+
+/* line 13, ../sass/partials/_cover.scss */
+.cover-layer {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.78);
+  box-sizing: border-box;
+  padding: 52px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 24, ../sass/partials/_cover.scss */
+section.cover-top {
+  margin-bottom: 42px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: transparent; }
+  /* line 31, ../sass/partials/_cover.scss */
+  section.cover-top h1 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1;
+    color: #004b6f;
+    color: rgba(0, 75, 111, 0.78);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'brandongrotesque-blackbook';
+    text-align: left; }
+    /* line 44, ../sass/partials/_cover.scss */
+    section.cover-top h1 img {
+      max-width: 100%;
+      width: 20px; }
+  /* line 50, ../sass/partials/_cover.scss */
+  section.cover-top p.t-inf {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    text-align: left; }
+    /* line 57, ../sass/partials/_cover.scss */
+    section.cover-top p.t-inf img {
+      max-width: 100%;
+      width: 12px; }
+    /* line 61, ../sass/partials/_cover.scss */
+    section.cover-top p.t-inf span.nm {
+      font-size: 14px; }
+
+/* line 68, ../sass/partials/_cover.scss */
+.hello {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: transparent; }
+  /* line 73, ../sass/partials/_cover.scss */
+  .hello .grt {
+    margin-bottom: 24px; }
+    /* line 77, ../sass/partials/_cover.scss */
+    .hello .grt img.hello-img {
+      float: left;
+      max-width: 100%;
+      width: 28px; }
+    /* line 83, ../sass/partials/_cover.scss */
+    .hello .grt p.team {
+      float: left;
+      margin: 0 22px;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #004b6f;
+      letter-spacing: 1px;
+      font-family: 'brandongrotesque-mediumbook'; }
+      /* line 92, ../sass/partials/_cover.scss */
+      .hello .grt p.team span.gld {
+        font-size: 14px; }
+    /* line 97, ../sass/partials/_cover.scss */
+    .hello .grt img.hii {
+      float: left;
+      max-width: 100%;
+      width: 28px; }
+  /* line 104, ../sass/partials/_cover.scss */
+  .hello p.description {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    font-family: 'brandongrotesque-regularbook'; }
+  /* line 114, ../sass/partials/_cover.scss */
+  .hello .cover-btm {
+    margin-top: 36px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    font-family: 'brandongrotesque-regularbook'; }
+    /* line 124, ../sass/partials/_cover.scss */
+    .hello .cover-btm span.btm-name {
+      margin-top: 12px;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #004b6f;
+      letter-spacing: 1px;
+      font-family: 'brandongrotesque-mediumbook'; }
+    /* line 134, ../sass/partials/_cover.scss */
+    .hello .cover-btm span.dgbtm {
+      font-size: 15px;
+      line-height: 1.5; }

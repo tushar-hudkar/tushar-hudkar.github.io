@@ -1,0 +1,141 @@
+.cover-bg{
+	@extend %leftfull;
+	height: 700px;
+	background: url(../../../img/cover-bg.jpg) no-repeat center;
+	background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 88px -24px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 88px -24px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 88px -24px rgba(0,0,0,1);
+}
+
+.cover-layer{
+	@extend %leftfull;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.78);
+  box-sizing: border-box;
+  padding: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.cover-top{
+  @extend %leftfull;
+  margin-bottom: 42px;
+  @include box-sizing(boxsizing);
+  background: transparent; 
+
+
+  h1{
+      @extend %leftfull;
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 1;
+      color: #004b6f;
+      color: rgba(0, 75, 111, 0.78);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: 'brandongrotesque-blackbook';
+      text-align: left;
+      @extend %ease;
+
+      img{
+  	    max-width: 100%;
+		    width: 20px;
+      }
+    }
+
+  p.t-inf{
+    @extend %leftfull;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    text-align: left;
+    img{
+  	    max-width: 100%;
+		width: 12px;
+      }
+    span.nm{
+    	font-size: 14px;
+    }
+  }
+}
+
+
+.hello{
+	@extend %leftfull;
+    @include box-sizing(boxsizing);
+    background: transparent;
+
+    .grt{
+    @extend %leftfull;
+    margin-bottom: 24px;
+
+    img.hello-img{
+    	float: left;
+    	max-width: 100%;
+		width: 28px;
+    }
+
+    p.team{
+    	float: left;
+    	margin: 0 22px;
+		  font-size: 22px;
+	    line-height: 1.5;
+	    color: #004b6f;
+	    letter-spacing: 1px;
+	    font-family: 'brandongrotesque-mediumbook';
+
+      span.gld{
+        font-size: 14px;
+      }
+    }
+
+    img.hii{
+    	float: left;
+    	max-width: 100%;
+		width: 28px;
+    }
+  }
+
+  p.description{
+  	@extend %leftfull;    
+    margin-bottom: 16px;
+  	font-size: 18px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    font-family: 'brandongrotesque-regularbook';
+  }
+
+.cover-btm{
+  @extend %leftfull;
+  margin-top: 36px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #004b6f;
+  letter-spacing: 1px;
+  font-family: 'brandongrotesque-regularbook';
+  
+
+  span.btm-name{
+    @extend %leftfull;
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #004b6f;
+    letter-spacing: 1px;
+    font-family: 'brandongrotesque-mediumbook';
+  }
+
+  span.dgbtm{
+    @extend %leftfull;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+}
+
