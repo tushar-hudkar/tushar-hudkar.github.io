@@ -82,7 +82,7 @@ section.cover-top{
 
     p.team{
     	float: left;
-    	margin: 0 22px;
+    	margin: 0px 8px 0px 22px;
 		  font-size: 22px;
 	    line-height: 1.5;
 	    color: #004b6f;
@@ -94,11 +94,19 @@ section.cover-top{
       }
     }
 
+    p.team2{
+      margin: 0 22px 0 6px;
+    }
+
     img.hii{
     	float: left;
     	max-width: 100%;
 		width: 28px;
     }
+
+    .lol{
+        float: left;
+      }
   }
 
   p.description{
