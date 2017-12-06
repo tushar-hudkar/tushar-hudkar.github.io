@@ -1211,7 +1211,7 @@ section.cover-top {
     /* line 83, ../sass/partials/_cover.scss */
     .hello .grt p.team {
       float: left;
-      margin: 0px 8px 0px 22px;
+      margin: 0px 22px 0px 22px;
       font-size: 22px;
       line-height: 1.5;
       color: #004b6f;
